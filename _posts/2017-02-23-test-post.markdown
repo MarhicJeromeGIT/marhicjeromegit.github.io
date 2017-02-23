@@ -1,8 +1,27 @@
 # HELLO BLOG
 
+Sometime, the need arise to pass extra arguments to a function. Something like this works fine:
+
 ```ruby
-def test()
-  puts ok
+def foo(options)
+  default = {a: 1, b: 1}
+  params = default.merge(options)
+end
+```
+
+However it lacks (...). Since version 2.0 Ruby allows for keywords arguments, that is instead of writing
+
+```ruby
+def foo(options)
+  a = options[:a]
+end
+```
+
+You can write
+
+```ruby
+def foo(a:)
+  # we already have a
 end
 ```
 
