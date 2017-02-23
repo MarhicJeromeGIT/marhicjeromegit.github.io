@@ -1,6 +1,6 @@
 # HELLO BLOG
 
-Sometime, the need arise to pass extra arguments to a function. Something like this works fine:
+Sometime, the need arise to use a mix of defaults and extra arguments to a function. Something like this works fine:
 
 ```ruby
 def foo(options)
@@ -9,7 +9,7 @@ def foo(options)
 end
 ```
 
-However it lacks (...). Since version 2.0 Ruby allows for keywords arguments, that is instead of writing
+However it lacks from a documentation point of view. Simply by viewing the method definition we have no idea what the default parameters are. Since version 2.0, Ruby allows for keywords arguments, which improve readability a lot. It's like naming the parameters, but you are not constrained by the order. Instead of
 
 ```ruby
 def foo(options)
@@ -17,11 +17,11 @@ def foo(options)
 end
 ```
 
-You can write
+You can now write
 
 ```ruby
 def foo(a:)
-  # we already have a
+  # we already have 'a' available
 end
 ```
 Let's use keywords arguments to enable a mix of default and extra parameters for our functions !
@@ -29,31 +29,43 @@ Let's use keywords arguments to enable a mix of default and extra parameters for
 ```ruby
 # notice the double splat '**' 
 def foo(a: 1, b: 1, **extra_key) 
-  params = method(__method__).parameters
-  params.pop # remove the 'extra_keywords' element
-  default_params = (params.map{|key, arg| [arg, (binding.local_variable_get arg)]})
-  options = default_params.merge(extra_key)
-  # Now options is the merge of {a: 1, b:1} and the extra_key params
-
-def foo(a: 1, b: 1, **extra_keys)
-  params = method(__method__).parameters
-  params.pop
-  default_params = (params.map{|key, arg| [arg, (binding.local_variable_get arg)]})
-  puts default_params
-  default_params = Hash[default_params]     
-  puts default_params
+  default_params = {a: a, b: b}
   options = default_params.merge(extra_keys)
-  return options
 end
+
+f(a: 2, c: 1)
+# {a: 2, b: 1, c: 1}
 ```
+
+We are getting there, but it's inconvenient to have to write the default params a second time to get them into a hash. Instead, we can make use of the method *parameters* ruby meta function, to get an array of the params names, and the *local_variable_get* to get the value for each parameter.
+
+```ruby
+def foo(a: 1, b: 1, **extra_keys)
+  options = Hash[method(__method__).parameters.map{|key, arg| [arg, (binding.local_variable_get arg)]}]
+  options = options.merge options.delete(:extra_keys) # 'flatten' the extra_key key
+end```
 
 For example :
 ```ruby
 foo
 #
 foo(c: 1)
+#
+foo(c: 1, a: 2)
+#
 ```
-*list
-*list
 
-ok.
+This way, the default parameters are immediately visible, and the user can pass any other numbers of parameters. The ordering of the parameters also does not matter. The inconvenient is that it's not easy to read or write. As a finishing touch, let's extract it into a helper function by passing the caller function binding object:
+
+```ruby
+def merge_params(params, bind)
+  a = params.map{|key,arg| [arg, bind.local_variable_get(arg)]}
+  h = Hash[a]
+  extra_key = h.keys.last
+  h.merge h.delete(extra_key)
+end
+
+def foo(a: 1, b: 1, **extra_keys)
+  options = merge_params(method(__method__).parameters, binding)
+end
+```
