@@ -24,7 +24,35 @@ def foo(a:)
   # we already have a
 end
 ```
+Let's use keywords arguments to enable a mix of default and extra parameters for our functions !
 
+```ruby
+# notice the double splat '**' 
+def foo(a: 1, b: 1, **extra_key) 
+  params = method(__method__).parameters
+  params.pop # remove the 'extra_keywords' element
+  default_params = (params.map{|key, arg| [arg, (binding.local_variable_get arg)]})
+  options = default_params.merge(extra_key)
+  # Now options is the merge of {a: 1, b:1} and the extra_key params
+
+def foo(a: 1, b: 1, **extra_keys)
+  params = method(__method__).parameters
+  params.pop
+  default_params = (params.map{|key, arg| [arg, (binding.local_variable_get arg)]})
+  puts default_params
+  default_params = Hash[default_params]     
+  puts default_params
+  options = default_params.merge(extra_keys)
+  return options
+end
+```
+
+For example :
+```ruby
+foo
+#
+foo(c: 1)
+```
 *list
 *list
 
