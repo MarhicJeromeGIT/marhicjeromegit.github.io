@@ -26,7 +26,7 @@ github_username:  MarhicJeromeGit
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-cayman #minima
 gems:
   - jekyll-feed
 exclude:
