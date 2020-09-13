@@ -16,7 +16,7 @@ plt.plot([0,1,2],[0,1,4])
 
 
     
-![svg](2020-09-13-hello-jupyter_files/2020-09-13-hello-jupyter_1_1.svg)
+![svg](hello-jupyter_files/hello-jupyter_1_1.svg)
     
 
 
