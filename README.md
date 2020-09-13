@@ -15,3 +15,6 @@ From https://towardsdatascience.com/how-to-use-pipenv-with-jupyter-and-vscode-ae
 https://github.com/jupyter/nbconvert
 
 - jupyter nbconvert --to markdown HelloJupyter.ipynb
+
+# Jekyll
+`bundle exec jekyll serve`
