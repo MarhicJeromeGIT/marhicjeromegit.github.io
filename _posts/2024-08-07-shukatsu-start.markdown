@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Shukatsu start"
 date:   2024-08-07 19:04:56 +0000
 categories: shukatsu
