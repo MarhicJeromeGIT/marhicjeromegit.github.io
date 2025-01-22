@@ -13,3 +13,4 @@ Hi, I’m Jerome Marhic, a backend developer with a knack for building efficient
 
 Outside of coding, I enjoy breaking down complex problems, designing crossword grids, and tinkering with personal tools to make life easier. When I’m not at my keyboard, I’m likely spending time with my family or documenting my thoughts and projects on my [Jekyll blog](#). Thanks for stopping by!
 
+Contact: marhic.jerome@gmail.com
