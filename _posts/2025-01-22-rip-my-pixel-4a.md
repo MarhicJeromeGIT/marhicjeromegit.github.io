@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Google killed my Pixel 4a
+title: RIP my Pixel 4a
 date: 2025-01-22 06:04 +0000
 author_profile: true
 ---
