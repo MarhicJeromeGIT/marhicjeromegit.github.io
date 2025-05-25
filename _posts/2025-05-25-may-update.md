@@ -12,12 +12,13 @@ Another May update ! Not much going on as usual, rainy season arrived in Ho Chi 
 Yesterday we got the announcement that [Pocket was saying goodbye](https://support.mozilla.org/en-US/kb/future-of-pocket). Kind of bummed because I found the service convenient, though I just used it as a link bookmark (I never cared much about the reading mode, I always go to the original link - though apparently that worked well with the Kobo e-reader). Anyway I switched to a self-hosted alternative immediately: [Wallabag](https://wallabag.org/). It's kind of sluggish but it does the job, and it has an Android app so I can still "share link" to save a link from my phone.
 
 That brings my current self hosted service collection to:
-- Wallabag (Read-it later)
-- Pihole (DNS)
-- Miniflux (RSS)
-- Prometheus/Graphana
-- Jellyfin (Media)
-- Openwebui (AI Chatbot)
+
+* Wallabag (Read-it later)
+* Pihole (DNS)
+* Miniflux (RSS)
+* Prometheus/Graphana
+* Jellyfin (Media)
+* Openwebui (AI Chatbot)
 
 Anyway, I was importing my old pocket saves into my new Wallabag setup (I've got a script to import your links from Pocket [here](https://gist.github.com/MarhicJeromeGIT/6a87d8f8744b49c7e32315180729ae9b)) and I found an old save from Russ Cox's blog, [Regular Expression Matching Can Be Simple And Fast ](https://swtch.com/~rsc/regexp/regexp1.html). It has this scary looking graph for a not so scary looking regex:
 
