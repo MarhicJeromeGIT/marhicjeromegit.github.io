@@ -14,3 +14,9 @@ Here's where I got so far, using ChatGPT 4o and [Playwright MCP](https://github.
 <video controls src="/assets/video/password_game_1.webm" title="Title" height=500></video>
 
 On an unrelated note, my company finally decided to self host a model ! We are going for vLLM+Skypilot. Pretty excited about the possibilities here, though hosting on AWS is expensive and I have doubts about the return on interest (last time I did the math, it was basically impossible to beat gpt-4o-mini pricing on token/\$, so let's hope the quality is there and that we can migrate to a cheaper GPU provider).
+
+# Edit: June 29th
+
+Alright a quick update on the password game, I now pass a screenshot after each step and with a little bit of [context engineering](https://simonwillison.net/2025/Jun/27/context-engineering/), and adding an extra thinking step with o4-mini, I was able to consistently clear the "sponsor" image step (as well as the captcha step !). I reached up to step 11, which requires knowing "Today's Wordle answer"... gonna be hard to solve ! I think I need a different approach for this one (multi agent ?), where I can delegate a subtask to be cleared by a different agent (ie "find today's wordle answer" using search and navigation). I'll see if I can use the [OpenAI Agent SDK](https://github.com/openai/openai-agents-python) to make progress.
+
+![Step 11 of the password game require knowing today's wordle answer...](/assets/images/password_game_wordle.png)
