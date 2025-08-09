@@ -3,8 +3,8 @@ layout: single
 title: Maths notes (1)
 date: 2025-07-30 02:17 +0000
 author_profile: true
-
 ---
+
 So I started reading a paper about diffusion (the original [DDPM paper](https://arxiv.org/abs/2006.11239)) and I was quickly out of my depth. I needed a refresher about probabilities, and actually even more basic stuff like exponential and integration. And I thought why not share the notes here! So this blog post is the content of a python notebook about exponential and the normal distribution, exported to markdown with `jupyter nbconvert`. It's not deep or anything, just a nice refresher for myself. Kind of a pain to write math formulas and get them displayed in my Jekyll blog but got it working with [Mathjax](https://www.mathjax.org/).
 
 ```python
