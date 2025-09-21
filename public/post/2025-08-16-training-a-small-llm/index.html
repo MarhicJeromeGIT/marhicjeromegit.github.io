@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Training a small LLM | </title>
+<meta name="keywords" content="">
+<meta name="description" content="So in my [last post about Pilish]({% post_url 2025-08-09-pillmish %}) I mentioned that a follow up to get better results would be to use a LLM with word level tokenization. It&rsquo;s actually a bad idea in general because the vocabulary size can be huge, and that&rsquo;s why most LLM these days use BPE or subword tokenization, but I decided to give it a quick try and train a LLM from scratch with word level tokenization. Back in 2023 I used to be quite into finetuning and all that but this year I haven&rsquo;t done much low level tinkering with LLM so it was a good exercise.">
+<meta name="author" content="">
+<link rel="canonical" href="/post/2025-08-16-training-a-small-llm/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css" integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="/post/2025-08-16-training-a-small-llm/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="/post/2025-08-16-training-a-small-llm/">
+  <meta property="og:title" content="Training a small LLM">
+  <meta property="og:description" content="So in my [last post about Pilish]({% post_url 2025-08-09-pillmish %}) I mentioned that a follow up to get better results would be to use a LLM with word level tokenization. It’s actually a bad idea in general because the vocabulary size can be huge, and that’s why most LLM these days use BPE or subword tokenization, but I decided to give it a quick try and train a LLM from scratch with word level tokenization. Back in 2023 I used to be quite into finetuning and all that but this year I haven’t done much low level tinkering with LLM so it was a good exercise.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-08-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-08-16T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Training a small LLM">
+<meta name="twitter:description" content="So in my [last post about Pilish]({% post_url 2025-08-09-pillmish %}) I mentioned that a follow up to get better results would be to use a LLM with word level tokenization. It&rsquo;s actually a bad idea in general because the vocabulary size can be huge, and that&rsquo;s why most LLM these days use BPE or subword tokenization, but I decided to give it a quick try and train a LLM from scratch with word level tokenization. Back in 2023 I used to be quite into finetuning and all that but this year I haven&rsquo;t done much low level tinkering with LLM so it was a good exercise.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Training a small LLM",
+      "item": "/post/2025-08-16-training-a-small-llm/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Training a small LLM",
+  "name": "Training a small LLM",
+  "description": "So in my [last post about Pilish]({% post_url 2025-08-09-pillmish %}) I mentioned that a follow up to get better results would be to use a LLM with word level tokenization. It\u0026rsquo;s actually a bad idea in general because the vocabulary size can be huge, and that\u0026rsquo;s why most LLM these days use BPE or subword tokenization, but I decided to give it a quick try and train a LLM from scratch with word level tokenization. Back in 2023 I used to be quite into finetuning and all that but this year I haven\u0026rsquo;t done much low level tinkering with LLM so it was a good exercise.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "So in my [last post about Pilish]({% post_url 2025-08-09-pillmish %}) I mentioned that a follow up to get better results would be to use a LLM with word level tokenization. It’s actually a bad idea in general because the vocabulary size can be huge, and that’s why most LLM these days use BPE or subword tokenization, but I decided to give it a quick try and train a LLM from scratch with word level tokenization. Back in 2023 I used to be quite into finetuning and all that but this year I haven’t done much low level tinkering with LLM so it was a good exercise.\nHuggingface has done a great job with their Trainer method so it’s actually very straightforward:\ncreate a tokenizer (here, word level) define a model (I just reused the GPT-2 model and played a bit with the parameters to get something quick to train) train the model inference I put the scripts in this repo : Pillmish\nFor the dataset, I used Tinystories. It was an experiment on getting comparatively very small LLM to write coherent english text, see the paper How Small Can Language Models Be and Still Speak Coherent English?. Using this dataset, I knew that my small model (around 5M parameters) should also be able to generate coherent text. Also it uses a simplified vocabulary, which is important to keep my word level tokenizer small. In total I limited to the default, 30k vocabulary size.\nLong story short, after training for around 45 minute the loss was good (I forgot but around 3 something) and the sentences look reasonable. Here are a few generation (prompt in bold):\nonce upon a time , there was a little boy named timmy . timmy loved to play outside with his friends . one day , timmy ’ s mom asked him to build a big snowman . timmy was so excited to help his mom and dad . after a while , timmy ’ s dad said , \" timmy , we are going to clean the castle ! see how heavy the snowman can put in a big castle .\" timmy watched as his mom combed his head . he was so happy ! after that day , timmy ’ s dad decided the king and the queen had a silly day . the king was very rich . the king had a big farm with many animals . he was a lot of animals and animals . one day , a little girl came to the castle . she had a big , red car . she had a big bow on the wall . the little girl said , \" hello , queen . i am a king .\" the king looked at the little girl . he said , \" can i borrow it ?\" the little girl was sad . she thought for a tom saw a cat in the yard . he wanted to pet it . he saw a big truck with sharp claws . tom wanted to pet the truck , so he took the truck . but the truck was too big and heavy . tom took the truck and ran away . the truck opened the door and saw a little girl . the man had big eyes . the truck opened its door , and the man opened the truck . the truck was very big . he could not see that the truck was broken . he wanted the truck to Alright, to get back to the Pilish problem, if I apply the LogitProcessor to constrain the generation to word matching the Pi digits, we get…\nleo a very a brave alligator in school every day after drinking something special somewhere new in the sunshine that looked so loudly that all the children had to discuss listening about everything he belonged belonged from a beautiful village a nearby crocodile who continued searching for answers right a mysterious voice whenever he discovered something strange that disturbed them\n(digits of Pi for reference: 3.1415926535). I think it’s acceptable given the size of the model (5M params trained for 45 minutes on a single RTX 3060). Mostly it was a proof of concept, but it got me interested in training again ! It’s impressive what small models can achieve when given a good dataset.\n",
+  "wordCount" : "728",
+  "inLanguage": "en",
+  "datePublished": "2025-08-16T00:00:00Z",
+  "dateModified": "2025-08-16T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2025-08-16-training-a-small-llm/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Training a small LLM
+    </h1>
+    <div class="post-meta"><span title='2025-08-16 00:00:00 +0000 UTC'>August 16, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>So in my [last post about Pilish]({% post_url 2025-08-09-pillmish %}) I mentioned that a follow up to get better results would be to use a LLM with word level tokenization. It&rsquo;s actually a bad idea in general because the vocabulary size can be huge, and that&rsquo;s why most LLM these days use BPE or subword tokenization, but I decided to give it a quick try and train a LLM from scratch with word level tokenization. Back in 2023 I used to be quite into finetuning and all that but this year I haven&rsquo;t done much low level tinkering with LLM so it was a good exercise.</p>
+<p>Huggingface has done a great job with their <a href="https://huggingface.co/docs/transformers/trainer">Trainer</a> method so it&rsquo;s actually very straightforward:</p>
+<ul>
+<li>create a tokenizer (here, word level)</li>
+<li>define a model (I just reused the GPT-2 model and played a bit with the parameters to get something quick to train)</li>
+<li>train the model</li>
+<li>inference</li>
+</ul>
+<p>I put the scripts in this repo : <a href="https://github.com/goverture/pillmish">Pillmish</a></p>
+<p>For the dataset, I used <a href="https://huggingface.co/datasets/roneneldan/TinyStories">Tinystories</a>. It was an experiment on getting comparatively very small LLM to write coherent english text, see the paper <a href="https://arxiv.org/pdf/2305.07759">How Small Can Language Models Be and Still Speak Coherent English?</a>. Using this dataset, I knew that my small model (around 5M parameters) should also be able to generate coherent text. Also it uses a simplified vocabulary, which is important to keep my word level tokenizer small. In total I limited to the default, 30k vocabulary size.</p>
+<p>Long story short, after training for around 45 minute the loss was good (I forgot but around 3 something) and the sentences look reasonable. Here are a few generation (prompt in bold):</p>
+<ul>
+<li><strong>once upon a time</strong> , there was a little boy named timmy . timmy loved to play outside with his friends . one day , timmy &rsquo; s mom asked him to build a big snowman . timmy was so excited to help his mom and dad . after a while , timmy &rsquo; s dad said , &quot; timmy , we are going to clean the castle ! see how heavy the snowman can put in a big castle .&quot; timmy watched as his mom combed his head . he was so happy ! after that day , timmy &rsquo; s dad decided</li>
+<li><strong>the king and the queen</strong> had a silly day . the king was very rich . the king had a big farm with many animals . he was a lot of animals and animals . one day , a little girl came to the castle . she had a big , red car . she had a big bow on the wall . the little girl said , &quot; hello , queen . i am a king .&quot; the king looked at the little girl . he said , &quot; can i borrow it ?&quot; the little girl was sad . she thought for a</li>
+<li><strong>tom saw a cat</strong> in the yard . he wanted to pet it . he saw a big truck with sharp claws . tom wanted to pet the truck , so he took the truck . but the truck was too big and heavy . tom took the truck and ran away . the truck opened the door and saw a little girl . the man had big eyes . the truck opened its door , and the man opened the truck . the truck was very big . he could not see that the truck was broken . he wanted the truck to</li>
+</ul>
+<p>Alright, to get back to the Pilish problem, if I apply the LogitProcessor to constrain the generation to word matching the Pi digits, we get&hellip;</p>
+<blockquote>
+<p>leo a very a brave alligator in school every day after drinking something special somewhere new in the sunshine that looked so loudly that all the children had to discuss listening about everything he belonged belonged from a beautiful village a nearby crocodile who continued searching for answers right a mysterious voice whenever he discovered something strange that disturbed them</p></blockquote>
+<p>(digits of Pi for reference: 3.1415926535). I think it&rsquo;s acceptable given the size of the model (5M params trained for 45 minutes on a single RTX 3060). Mostly it was a proof of concept, but it got me interested in training again ! It&rsquo;s impressive what small models can achieve when given a good dataset.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="/"></a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

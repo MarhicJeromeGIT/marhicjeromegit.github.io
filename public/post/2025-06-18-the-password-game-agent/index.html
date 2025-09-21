@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The password game agent | </title>
+<meta name="keywords" content="">
+<meta name="description" content="There is this javascript game called The Password Game where you have to chose a password, following increasingly ludicrous requirements.
+Agentic coding/research is all the rage today and I got the idea of making an &ldquo;agent&rdquo; that would solve it. Conceptually it&rsquo;s just about calling a LLM in a loop, giving it the proper tools and context until it solved the task at hand.
+Here&rsquo;s where I got so far, using ChatGPT 4o and Playwright MCP (only gave it the navigate and type tools for now). It&rsquo;s solving correctly the first few steps, but gets stuck at the &ldquo;sponsor&rdquo; rule because it cannot view the image. The next step is to give it access to the playwright&rsquo;s screenshot tool. Let&rsquo;s see how far it can go !">
+<meta name="author" content="">
+<link rel="canonical" href="/post/2025-06-18-the-password-game-agent/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css" integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="/post/2025-06-18-the-password-game-agent/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="/post/2025-06-18-the-password-game-agent/">
+  <meta property="og:title" content="The password game agent">
+  <meta property="og:description" content="There is this javascript game called The Password Game where you have to chose a password, following increasingly ludicrous requirements. Agentic coding/research is all the rage today and I got the idea of making an “agent” that would solve it. Conceptually it’s just about calling a LLM in a loop, giving it the proper tools and context until it solved the task at hand.
+Here’s where I got so far, using ChatGPT 4o and Playwright MCP (only gave it the navigate and type tools for now). It’s solving correctly the first few steps, but gets stuck at the “sponsor” rule because it cannot view the image. The next step is to give it access to the playwright’s screenshot tool. Let’s see how far it can go !">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-06-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-18T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The password game agent">
+<meta name="twitter:description" content="There is this javascript game called The Password Game where you have to chose a password, following increasingly ludicrous requirements.
+Agentic coding/research is all the rage today and I got the idea of making an &ldquo;agent&rdquo; that would solve it. Conceptually it&rsquo;s just about calling a LLM in a loop, giving it the proper tools and context until it solved the task at hand.
+Here&rsquo;s where I got so far, using ChatGPT 4o and Playwright MCP (only gave it the navigate and type tools for now). It&rsquo;s solving correctly the first few steps, but gets stuck at the &ldquo;sponsor&rdquo; rule because it cannot view the image. The next step is to give it access to the playwright&rsquo;s screenshot tool. Let&rsquo;s see how far it can go !">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "The password game agent",
+      "item": "/post/2025-06-18-the-password-game-agent/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The password game agent",
+  "name": "The password game agent",
+  "description": "There is this javascript game called The Password Game where you have to chose a password, following increasingly ludicrous requirements. Agentic coding/research is all the rage today and I got the idea of making an \u0026ldquo;agent\u0026rdquo; that would solve it. Conceptually it\u0026rsquo;s just about calling a LLM in a loop, giving it the proper tools and context until it solved the task at hand.\nHere\u0026rsquo;s where I got so far, using ChatGPT 4o and Playwright MCP (only gave it the navigate and type tools for now). It\u0026rsquo;s solving correctly the first few steps, but gets stuck at the \u0026ldquo;sponsor\u0026rdquo; rule because it cannot view the image. The next step is to give it access to the playwright\u0026rsquo;s screenshot tool. Let\u0026rsquo;s see how far it can go !\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "There is this javascript game called The Password Game where you have to chose a password, following increasingly ludicrous requirements. Agentic coding/research is all the rage today and I got the idea of making an “agent” that would solve it. Conceptually it’s just about calling a LLM in a loop, giving it the proper tools and context until it solved the task at hand.\nHere’s where I got so far, using ChatGPT 4o and Playwright MCP (only gave it the navigate and type tools for now). It’s solving correctly the first few steps, but gets stuck at the “sponsor” rule because it cannot view the image. The next step is to give it access to the playwright’s screenshot tool. Let’s see how far it can go !\nOn an unrelated note, my company finally decided to self host a model ! We are going for vLLM+Skypilot. Pretty excited about the possibilities here, though hosting on AWS is expensive and I have doubts about the return on interest (last time I did the math, it was basically impossible to beat gpt-4o-mini pricing on token/$, so let’s hope the quality is there and that we can migrate to a cheaper GPU provider).\nEdit: June 29th Alright a quick update on the password game, I now pass a screenshot after each step and with a little bit of context engineering, and adding an extra thinking step with o4-mini, I was able to consistently clear the “sponsor” image step (as well as the captcha step !). I reached up to step 11, which requires knowing “Today’s Wordle answer”… gonna be hard to solve ! I think I need a different approach for this one (multi agent ?), where I can delegate a subtask to be cleared by a different agent (ie “find today’s wordle answer” using search and navigation). I’ll see if I can use the OpenAI Agent SDK to make progress.\n",
+  "wordCount" : "318",
+  "inLanguage": "en",
+  "datePublished": "2025-06-18T00:00:00Z",
+  "dateModified": "2025-06-18T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2025-06-18-the-password-game-agent/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      The password game agent
+    </h1>
+    <div class="post-meta"><span title='2025-06-18 00:00:00 +0000 UTC'>June 18, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>There is this javascript game called <a href="https://neal.fun/password-game/">The Password Game</a> where you have to chose a password, following increasingly ludicrous requirements.
+Agentic coding/research is all the rage today and I got the idea of making an &ldquo;agent&rdquo; that would solve it. Conceptually it&rsquo;s just about calling a LLM in a loop, giving it the proper tools and context until it solved the task at hand.</p>
+<p>Here&rsquo;s where I got so far, using ChatGPT 4o and <a href="https://github.com/microsoft/playwright-mcp">Playwright MCP</a> (only gave it the navigate and type tools for now). It&rsquo;s solving correctly the first few steps, but gets stuck at the &ldquo;sponsor&rdquo; rule because it cannot view the image. The next step is to give it access to the playwright&rsquo;s screenshot tool. Let&rsquo;s see how far it can go !</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>On an unrelated note, my company finally decided to self host a model ! We are going for vLLM+Skypilot. Pretty excited about the possibilities here, though hosting on AWS is expensive and I have doubts about the return on interest (last time I did the math, it was basically impossible to beat gpt-4o-mini pricing on token/$, so let&rsquo;s hope the quality is there and that we can migrate to a cheaper GPU provider).</p>
+<h1 id="edit-june-29th">Edit: June 29th<a hidden class="anchor" aria-hidden="true" href="#edit-june-29th">#</a></h1>
+<p>Alright a quick update on the password game, I now pass a screenshot after each step and with a little bit of <a href="https://simonwillison.net/2025/Jun/27/context-engineering/">context engineering</a>, and adding an extra thinking step with o4-mini, I was able to consistently clear the &ldquo;sponsor&rdquo; image step (as well as the captcha step !). I reached up to step 11, which requires knowing &ldquo;Today&rsquo;s Wordle answer&rdquo;&hellip; gonna be hard to solve ! I think I need a different approach for this one (multi agent ?), where I can delegate a subtask to be cleared by a different agent (ie &ldquo;find today&rsquo;s wordle answer&rdquo; using search and navigation). I&rsquo;ll see if I can use the <a href="https://github.com/openai/openai-agents-python">OpenAI Agent SDK</a> to make progress.</p>
+<p><img alt="Step 11 of the password game require knowing today&rsquo;s wordle answer&hellip;" loading="lazy" src="/assets/images/password_game_wordle.png"></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="/"></a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
