@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>First steps with CDK | </title>
+<meta name="keywords" content="">
+<meta name="description" content="Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about AWS CDK. As a learning step, I&rsquo;ve made a small template to deploy a static website on S3 &#43; CloudFront for the frontend and ALB &#43; ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it&rsquo;s a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it&rsquo;s really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.">
+<meta name="author" content="">
+<link rel="canonical" href="/post/2025-03-09-trying-cdk-and-k6/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css" integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="/post/2025-03-09-trying-cdk-and-k6/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="/post/2025-03-09-trying-cdk-and-k6/">
+  <meta property="og:title" content="First steps with CDK">
+  <meta property="og:description" content="Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about AWS CDK. As a learning step, I’ve made a small template to deploy a static website on S3 &#43; CloudFront for the frontend and ALB &#43; ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it’s a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it’s really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-03-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-09T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="First steps with CDK">
+<meta name="twitter:description" content="Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about AWS CDK. As a learning step, I&rsquo;ve made a small template to deploy a static website on S3 &#43; CloudFront for the frontend and ALB &#43; ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it&rsquo;s a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it&rsquo;s really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "First steps with CDK",
+      "item": "/post/2025-03-09-trying-cdk-and-k6/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "First steps with CDK",
+  "name": "First steps with CDK",
+  "description": "Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about AWS CDK. As a learning step, I\u0026rsquo;ve made a small template to deploy a static website on S3 + CloudFront for the frontend and ALB + ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it\u0026rsquo;s a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it\u0026rsquo;s really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about AWS CDK. As a learning step, I’ve made a small template to deploy a static website on S3 + CloudFront for the frontend and ALB + ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it’s a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it’s really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.\nIn the past, I’ve been annoyed when writing a Lambda in staging and having to duplicate it in the production environment (a separate AWS account). This would solve those kinds of issues. Overall, I’m really pleased with the experience (especially given that the alternative was writing CloudFormation templates by hand or registering resources in the AWS console…). I didn’t look too closely into the generated CloudFormation templates, but it’s nice to be able to destroy and redeploy at will when something goes wrong.\nA few gotchas that bit me before I got it to work:\nFirst, I couldn’t create a VPC because we were exceeding the “Elastic IP” limit (5 per account per the AWS Doc), so I just reused an existing VPC. I didn’t have a health check endpoint in the backend code originally, so the service kept restarting and the deploy never completed successfully. We must have a /health (or /) endpoint reachable. The ACM for CloudFront must be issued in “us-east-1”? That one was super bullshit. Given that I made my template during the weekend, I’m open-sourcing it here: CDK Template - the stack definition itself is here. It deploys a single index.html page to S3 and CloudFront, registers some subdomains and SSL certificates, and deploys a load balancer and a container on ECS (using the ApplicationLoadBalancedFargateService construct) for a small Go app (a click counter).\n",
+  "wordCount" : "358",
+  "inLanguage": "en",
+  "datePublished": "2025-03-09T00:00:00Z",
+  "dateModified": "2025-03-09T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2025-03-09-trying-cdk-and-k6/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      First steps with CDK
+    </h1>
+    <div class="post-meta"><span title='2025-03-09 00:00:00 +0000 UTC'>March 9, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about <a href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">AWS CDK</a>. As a learning step, I&rsquo;ve made a small template to deploy a static website on S3 + CloudFront for the frontend and ALB + ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it&rsquo;s a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it&rsquo;s really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.</p>
+<p>In the past, I&rsquo;ve been annoyed when writing a Lambda in staging and having to duplicate it in the production environment (a separate AWS account). This would solve those kinds of issues. Overall, I&rsquo;m really pleased with the experience (especially given that the alternative was writing CloudFormation templates by hand or registering resources in the AWS console&hellip;). I didn&rsquo;t look too closely into the generated CloudFormation templates, but it&rsquo;s nice to be able to destroy and redeploy at will when something goes wrong.</p>
+<p>A few gotchas that bit me before I got it to work:</p>
+<ul>
+<li>First, I couldn&rsquo;t create a VPC because we were exceeding the &ldquo;Elastic IP&rdquo; limit (5 per account per the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#using-instance-addressing-limit">AWS Doc</a>), so I just reused an existing VPC.</li>
+<li>I didn&rsquo;t have a health check endpoint in the backend code originally, so the service kept restarting and the deploy never completed successfully. We must have a <code>/health</code> (or <code>/</code>) endpoint reachable.</li>
+<li>The ACM for CloudFront must be issued in &ldquo;us-east-1&rdquo;? That one was super bullshit.</li>
+</ul>
+<p>Given that I made my template during the weekend, I&rsquo;m open-sourcing it here: <a href="https://github.com/MarhicJeromeGIT/CDK-template">CDK Template</a> - the stack definition itself is <a href="https://github.com/MarhicJeromeGIT/CDK-template/blob/master/cdk/lib/cdk-stack.ts">here</a>. It deploys a single <code>index.html</code> page to S3 and CloudFront, registers some subdomains and SSL certificates, and deploys a load balancer and a container on ECS (using the <code>ApplicationLoadBalancedFargateService</code> construct) for a small Go app (a click counter).</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="/"></a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

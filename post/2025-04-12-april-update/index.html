@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>April update | </title>
+<meta name="keywords" content="">
+<meta name="description" content="Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven&rsquo;t been doing much in the past 3 weeks. Since I stopped working on it, I&rsquo;ve released my thematic crossword generation app, Prosettr, to a complete (and expected) indifference (zero traffic came from the HackerNews announcement, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I&rsquo;m quite happy with the result!">
+<meta name="author" content="">
+<link rel="canonical" href="/post/2025-04-12-april-update/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css" integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="/post/2025-04-12-april-update/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="/post/2025-04-12-april-update/">
+  <meta property="og:title" content="April update">
+  <meta property="og:description" content="Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven’t been doing much in the past 3 weeks. Since I stopped working on it, I’ve released my thematic crossword generation app, Prosettr, to a complete (and expected) indifference (zero traffic came from the HackerNews announcement, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I’m quite happy with the result!">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-04-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-12T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="April update">
+<meta name="twitter:description" content="Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven&rsquo;t been doing much in the past 3 weeks. Since I stopped working on it, I&rsquo;ve released my thematic crossword generation app, Prosettr, to a complete (and expected) indifference (zero traffic came from the HackerNews announcement, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I&rsquo;m quite happy with the result!">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "April update",
+      "item": "/post/2025-04-12-april-update/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "April update",
+  "name": "April update",
+  "description": "Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven\u0026rsquo;t been doing much in the past 3 weeks. Since I stopped working on it, I\u0026rsquo;ve released my thematic crossword generation app, Prosettr, to a complete (and expected) indifference (zero traffic came from the HackerNews announcement, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I\u0026rsquo;m quite happy with the result!\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven’t been doing much in the past 3 weeks. Since I stopped working on it, I’ve released my thematic crossword generation app, Prosettr, to a complete (and expected) indifference (zero traffic came from the HackerNews announcement, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I’m quite happy with the result!\nWhen getting ready for release I was considering my hosting options - GCP Cloud Run kind of rugged pull me with their CPU and memory quotas being way too low! And I was not going to beg them for a quota increase. Luckily, Fly.io saved the day with their super easy to use fly machines. My app requires a lot of CPU and memory (4cpu, 16 Gb of RAM) in very short bursts - just a few seconds when the user is doing a solve. I made a simple “controller” endpoint that starts and stops “solver” machines on demand, for that. The Fly.io API was a pleasure to work with, and it’s nice to be able to connect via a wireguard network.\nHere is the code of the controller endpoint for later reference: Fly.io controller endpoint in go. With that, I get a fleet of solver machines (I scaled to 8), and a single controller machine start them and proxies the websocket connection. I put it together in an evening and was pleased with the results. Fly machines really do start in a few milliseconds! I’ll use them in my next project, whatever that may be.\nMoving on, VSCode finally released their MCP support! I’ve been eyeing MCP stuff for a while but I didn’t have a MCP client (think Claude Code or Cursor) to play with. Now I have one with Copilot Agent! I asked our Infra team to enable the Copilot “Preview Features” for our organization, otherwise the MCP Servers didn’t appear in the list somehow.\nI followed a video tutorial on youtube and got the Postgres MCP working locally. It seems promising, I’ll have to play more with it.\nI’ll close with a generated image of Nvidia’s CEO as a lego figurine, the new ChatGPT image generation rocks!\n",
+  "wordCount" : "374",
+  "inLanguage": "en",
+  "datePublished": "2025-04-12T00:00:00Z",
+  "dateModified": "2025-04-12T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2025-04-12-april-update/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      April update
+    </h1>
+    <div class="post-meta"><span title='2025-04-12 00:00:00 +0000 UTC'>April 12, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven&rsquo;t been doing much in the past 3 weeks. Since I stopped working on it, I&rsquo;ve released my thematic crossword generation app, <a href="https://prosettr.com">Prosettr</a>, to a complete (and expected) indifference (zero traffic came from the <a href="https://news.ycombinator.com/item?id=43521279">HackerNews announcement</a>, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I&rsquo;m quite happy with the result!</p>
+<p>When getting ready for release I was considering my hosting options - GCP Cloud Run kind of rugged pull me with their CPU and memory quotas being way too low! And I was not going to beg them for a quota increase. Luckily, <a href="http://fly.io">Fly.io</a> saved the day with their super easy to use fly machines. My app requires a lot of CPU and memory (4cpu, 16 Gb of RAM) in very short bursts - just a few seconds when the user is doing a solve. I made a simple &ldquo;controller&rdquo; endpoint that starts and stops &ldquo;solver&rdquo; machines on demand, for that. The Fly.io API was a pleasure to work with, and it&rsquo;s nice to be able to connect via a wireguard network.</p>
+<p>Here is the code of the controller endpoint for later reference: <a href="https://gist.github.com/MarhicJeromeGIT/2d883c7b295bc4ab26b0f1b92597869a">Fly.io controller endpoint in go</a>. With that, I get a fleet of solver machines (I scaled to 8), and a single controller machine start them and proxies the websocket connection. I put it together in an evening and was pleased with the results. Fly machines really do start in a few milliseconds! I&rsquo;ll use them in my next project, whatever that may be.</p>
+<p>Moving on, VSCode finally released their <a href="https://code.visualstudio.com/updates/v1_99">MCP support</a>! I&rsquo;ve been eyeing MCP stuff for a while but I didn&rsquo;t have a MCP client (think Claude Code or Cursor) to play with. Now I have one with Copilot Agent! I asked our Infra team to enable the Copilot &ldquo;Preview Features&rdquo; for our organization, otherwise the MCP Servers didn&rsquo;t appear in the list somehow.</p>
+<p>I followed a video tutorial on <a href="https://www.youtube.com/watch?v=dutyOc_cAEU">youtube</a> and got the Postgres MCP working locally. It seems promising, I&rsquo;ll have to play more with it.</p>
+<p>I&rsquo;ll close with a generated image of Nvidia&rsquo;s CEO as a lego figurine, the new ChatGPT image generation rocks!</p>
+<p><img alt="Jensen Huang Lego" loading="lazy" src="/assets/images/jensen_lego_figurine.png"></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="/"></a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
