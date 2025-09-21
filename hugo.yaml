@@ -1,4 +1,88 @@
-baseURL: https://blog.jmarhic.com
+baseURL: "https://blog.jmarhic.com"
+title: "Daily Scream"
+languageCode: "en-us"
+defaultContentLanguage: "en"
 disablePathToLower: true
-languageCode: en-us
-title: Daily Scream
+pagination:
+  pagerSize: 10
+
+theme: "papermod"
+
+# Exclude junk files like Jekyll's exclude
+ignoreFiles:
+  - "\\.sass-cache/.*"
+  - "\\.jekyll-cache/.*"
+  - "^gemfiles/.*"
+  - "^Gemfile$"
+  - "^Gemfile\\.lock$"
+  - "^node_modules/.*"
+  - "^vendor/bundle/.*"
+  - "^vendor/cache/.*"
+  - "^vendor/gems/.*"
+  - "^vendor/ruby/.*"
+  - "^drafts/.*"
+  - "^(?i)Readme\\.md$"
+
+# Taxonomies (similar to Jekyll categories/tags)
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+# Author (PaperMod uses params.author mostly)
+author:
+  name: "Jerome Marhic"
+  email: "marhic.jerome@gmail.com"
+
+params:
+  env: production
+  description: "Write an awesome description for your new site here. It appears in meta tags and feeds."
+  keywords: ["blog", "backend", "development", "open-source"]
+
+  # Profile info (PaperMod shows this in home/about widgets)
+  # Theme options
+  defaultTheme: auto          # dark, light, or auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  TocOpen: false
+  comments: false             # toggle if you want comment integration
+  disableThemeToggle: false
+
+  # Sidebar settings
+  profileMode:
+    enabled: false          # disable the big profile card on homepage
+  showtoc: true             # optional, shows table of contents on posts
+
+
+  # Sidebar profile info
+  label:
+    text: "Daily Scream"
+    icon: "https://avatars.githubusercontent.com/u/10737949?v=4"
+    iconHeight: 35
+
+  # Enable sidebar
+  ShowSidebar: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+
+  # Author/social (shown in sidebar)
+  author: "Jerome Marhic"
+  socialIcons:
+    - name: github
+      url: "https://github.com/jmarhic"
+    - name: twitter
+      url: "https://twitter.com/yourhandle"
+    - name: email
+      url: "mailto:marhic.jerome@gmail.com"
+
+# Syntax highlighting
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    lineNos: true

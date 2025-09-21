@@ -6,21 +6,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title></title>
-
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="canonical" href="/">
+<title>Daily Scream</title>
+<meta name="keywords" content="blog, backend, development, open-source">
+<meta name="description" content="Write an awesome description for your new site here. It appears in meta tags and feeds.">
+<meta name="author" content="Jerome Marhic">
+<link rel="canonical" href="https://blog.jmarhic.com/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css" integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as="style">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<link rel="icon" href="https://blog.jmarhic.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.jmarhic.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.jmarhic.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.jmarhic.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.jmarhic.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="/index.xml">
-<link rel="alternate" hreflang="en" href="/">
+<link rel="alternate" type="application/rss+xml" href="https://blog.jmarhic.com/index.xml">
+<link rel="alternate" hreflang="en" href="https://blog.jmarhic.com/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,23 +57,26 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="/">
-  <meta property="og:locale" content="en">
+</noscript><meta property="og:url" content="https://blog.jmarhic.com/">
+  <meta property="og:site_name" content="Daily Scream">
+  <meta property="og:title" content="Daily Scream">
+  <meta property="og:description" content="Write an awesome description for your new site here. It appears in meta tags and feeds.">
+  <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Daily Scream">
+<meta name="twitter:description" content="Write an awesome description for your new site here. It appears in meta tags and feeds.">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "",
-  "url": "/",
-  "description": "",
-  "logo": "/favicon.ico",
+  "name": "Daily Scream",
+  "url": "https://blog.jmarhic.com/",
+  "description": "Write an awesome description for your new site here. It appears in meta tags and feeds.",
+  "logo": "https://blog.jmarhic.com/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/jmarhic", "https://twitter.com/yourhandle", "mailto:marhic.jerome@gmail.com"
   ]
 }
 </script>
@@ -94,6 +97,9 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
+            <a href="https://blog.jmarhic.com/" accesskey="h" title="Daily Scream (Alt + H)">
+                <img src="https://avatars.githubusercontent.com/u/10737949?v=4" alt="" aria-label="logo"
+                    height="35">Daily Scream</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -132,8 +138,8 @@
     <p>So in my [last post about Pilish]({% post_url 2025-08-09-pillmish %}) I mentioned that a follow up to get better results would be to use a LLM with word level tokenization. It’s actually a bad idea in general because the vocabulary size can be huge, and that’s why most LLM these days use BPE or subword tokenization, but I decided to give it a quick try and train a LLM from scratch with word level tokenization. Back in 2023 I used to be quite into finetuning and all that but this year I haven’t done much low level tinkering with LLM so it was a good exercise.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-16 00:00:00 +0000 UTC'>August 16, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Training a small LLM" href="/post/2025-08-16-training-a-small-llm/"></a>
+  <footer class="entry-footer"><span title='2025-08-16 00:00:00 +0000 UTC'>August 16, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to Training a small LLM" href="https://blog.jmarhic.com/post/2025-08-16-training-a-small-llm/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -146,8 +152,8 @@
 Long story short, the trick is to constrain the output to follow the digits of Pi—the same way that structured output (JSON, etc.) works. With Hugging Face Transformers, it’s easy to do with a custom logits_processor. Here, we just constrain the tokens to those matching the desired number of characters at each step. I shared the code on GitHub.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-09 00:00:00 +0000 UTC'>August 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Pillmish" href="/post/2025-08-09-pillmish/"></a>
+  <footer class="entry-footer"><span title='2025-08-09 00:00:00 +0000 UTC'>August 9, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to Pillmish" href="https://blog.jmarhic.com/post/2025-08-09-pillmish/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -160,8 +166,8 @@ Long story short, the trick is to constrain the output to follow the digits of P
 Recently I’ve been on the market for a “CLI Agent” (synchronous, like Claude Code, not async like Devin and co.). I’ve been using Gemini CLI with good results — as long as I’m within the free PRO requests. As soon as it switches to the “flash” model it becomes useless, can’t edit a file properly, and just loops on itself. I wouldn’t pay for it. Claude Code seems too expensive; I might give OpenAI Codex a try with GPT-5, but I haven’t heard much about it.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-08 00:00:00 +0000 UTC'>August 8, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to August 2025 Update (GPT-5, Veo 3, Gemini CLI, Open Source)" href="/post/2025-08-08-august-2025-update/"></a>
+  <footer class="entry-footer"><span title='2025-08-08 00:00:00 +0000 UTC'>August 8, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to August 2025 Update (GPT-5, Veo 3, Gemini CLI, Open Source)" href="https://blog.jmarhic.com/post/2025-08-08-august-2025-update/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -173,8 +179,8 @@ Recently I’ve been on the market for a “CLI Agent” (synchronous, like Clau
     <p>So I started reading a paper about diffusion (the original DDPM paper) and I was quickly out of my depth. I needed a refresher about probabilities, and actually even more basic stuff like exponential and integration. And I thought why not share the notes here! So this blog post is the content of a python notebook about exponential and the normal distribution, exported to markdown with jupyter nbconvert. It’s not deep or anything, just a nice refresher for myself. Kind of a pain to write math formulas and get them displayed in my Jekyll blog but got it working with Mathjax.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-30 00:00:00 +0000 UTC'>July 30, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Maths notes (1)" href="/post/2025-07-30-maths-notes-1/"></a>
+  <footer class="entry-footer"><span title='2025-07-30 00:00:00 +0000 UTC'>July 30, 2025</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to Maths notes (1)" href="https://blog.jmarhic.com/post/2025-07-30-maths-notes-1/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -186,8 +192,8 @@ Recently I’ve been on the market for a “CLI Agent” (synchronous, like Clau
     <p>Google did me dirty this week and I’m salty, so let me tell you. The other day I received an email informing me that my YouTube Premium subscription had been renewed, which surprised me because I canceled it about 6 months ago, and I haven’t missed it ever since (thanks, yt-dlp!). I first thought it was my daughter’s shenanigans, but after a closer look I had only “paused” the subscription instead of canceling it, and Google conveniently failed to inform me it was going to be restarted… No advance email like “your subscription will restart in a few days,” just “whoops, we restarted your subscription and you’ve been charged 13 euros, teehee.”
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-25 00:00:00 +0000 UTC'>July 25, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to I apologize for the confusion. You&#39;re absolutely right." href="/post/2025-07-25-i-apologize-for-the-confusion-you-re-absolutely-right/"></a>
+  <footer class="entry-footer"><span title='2025-07-25 00:00:00 +0000 UTC'>July 25, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to I apologize for the confusion. You&#39;re absolutely right." href="https://blog.jmarhic.com/post/2025-07-25-i-apologize-for-the-confusion-you-re-absolutely-right/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -200,8 +206,8 @@ Recently I’ve been on the market for a “CLI Agent” (synchronous, like Clau
 The main changes that enabled going from step 11 (Wordle answer) to 16 were adding a “search tool” based on OpenAI web search tool and changing the reasoning effort from “medium” to “high”. The current version of the code is here : https://github.com/goverture/password-game-agent/blob/master/manually.py I’m still making regular changes and trying new ideas to make progress. I’ve noticed we often seem to get stuck for various reason (for instance a badly recognized Capcha), so I want to add a new step to ensure that we make progress consistently, or backtrack, in order to not get stuck.
 </p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-05 00:00:00 +0000 UTC'>July 5, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to July Update" href="/post/2025-07-05-july-update/"></a>
+  <footer class="entry-footer"><span title='2025-07-05 00:00:00 +0000 UTC'>July 5, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to July Update" href="https://blog.jmarhic.com/post/2025-07-05-july-update/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -214,8 +220,8 @@ The main changes that enabled going from step 11 (Wordle answer) to 16 were addi
 Here’s where I got so far, using ChatGPT 4o and Playwright MCP (only gave it the navigate and type tools for now). It’s solving correctly the first few steps, but gets stuck at the “sponsor” rule because it cannot view the image. The next step is to give it access to the playwright’s screenshot tool. Let’s see how far it can go !
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-06-18 00:00:00 +0000 UTC'>June 18, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to The password game agent" href="/post/2025-06-18-the-password-game-agent/"></a>
+  <footer class="entry-footer"><span title='2025-06-18 00:00:00 +0000 UTC'>June 18, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to The password game agent" href="https://blog.jmarhic.com/post/2025-06-18-the-password-game-agent/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -228,8 +234,8 @@ Here’s where I got so far, using ChatGPT 4o and Playwright MCP (only gave it t
 Yesterday we got the announcement that Pocket was saying goodbye. Kind of bummed because I found the service convenient, though I just used it as a link bookmark (I never cared much about the reading mode, I always go to the original link - though apparently that worked well with the Kobo e-reader). Anyway I switched to a self-hosted alternative immediately: Wallabag. It’s kind of sluggish but it does the job, and it has an Android app so I can still “share link” to save a link from my phone.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-05-25 00:00:00 +0000 UTC'>May 25, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to May update" href="/post/2025-05-25-may-update/"></a>
+  <footer class="entry-footer"><span title='2025-05-25 00:00:00 +0000 UTC'>May 25, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to May update" href="https://blog.jmarhic.com/post/2025-05-25-may-update/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -241,8 +247,8 @@ Yesterday we got the announcement that Pocket was saying goodbye. Kind of bummed
     <p>So MCP is all the rage these days, and it’s not very complex: it’s basically a standardized way to provide tools to LLMs. So you have an RPC server that provides a description of the tools and the parameters they expect, and your client (a LLM based application) can connect to it and tell the LLM what tools are available, and the LLM can decide to call them when appropriate. Easy stuff and the SDK provided do most of the heavy lifting.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-05-04 00:00:00 +0000 UTC'>May 4, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to My First MCP server" href="/post/2025-05-04-my-first-mcp-server/"></a>
+  <footer class="entry-footer"><span title='2025-05-04 00:00:00 +0000 UTC'>May 4, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to My First MCP server" href="https://blog.jmarhic.com/post/2025-05-04-my-first-mcp-server/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -254,19 +260,19 @@ Yesterday we got the announcement that Pocket was saying goodbye. Kind of bummed
     <p>Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven’t been doing much in the past 3 weeks. Since I stopped working on it, I’ve released my thematic crossword generation app, Prosettr, to a complete (and expected) indifference (zero traffic came from the HackerNews announcement, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I’m quite happy with the result!
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-12 00:00:00 +0000 UTC'>April 12, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to April update" href="/post/2025-04-12-april-update/"></a>
+  <footer class="entry-footer"><span title='2025-04-12 00:00:00 +0000 UTC'>April 12, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
+  <a class="entry-link" aria-label="post link to April update" href="https://blog.jmarhic.com/post/2025-04-12-april-update/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="/page/2/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://blog.jmarhic.com/page/2/">Next&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="/"></a></span> · 
+        <span>&copy; 2025 <a href="https://blog.jmarhic.com/">Daily Scream</a></span> · 
 
     <span>
         Powered by
