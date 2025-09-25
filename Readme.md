@@ -6,3 +6,4 @@ echo "theme = 'papermod'" >> hugo.toml
 
 hugo
 git subtree push --prefix public origin gh-pages
+
