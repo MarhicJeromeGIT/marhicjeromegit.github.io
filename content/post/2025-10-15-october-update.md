@@ -1,7 +1,7 @@
 ---
 title: "Logic riddle (October update)"
 date: 2025-10-15T15:04:24+09:00
-draft: true
+draft: false
 ---
 
 > A programmer says "I have 2 kids, and the sum of their age is 4".
