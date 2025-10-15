@@ -7,3 +7,9 @@ echo "theme = 'papermod'" >> hugo.toml
 hugo
 git subtree push --prefix public origin gh-pages
 
+
+# New post
+hugo new content content/post/2025-10-15-october-update.md
+
+# Run hugo (draft mode)
+hugo server -D
