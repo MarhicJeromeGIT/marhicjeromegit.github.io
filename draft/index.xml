@@ -2,33 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Drafts on Daily Scream</title>
-    <link>http://localhost:1313/draft/</link>
+    <link>https://blog.jmarhic.com/draft/</link>
     <description>Recent content in Drafts on Daily Scream</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/draft/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MCP and DIY</title>
-      <link>http://localhost:1313/draft/2025-07-11-mcp-and-diy/</link>
-      <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/draft/2025-07-11-mcp-and-diy/</guid>
-      <description>&lt;p&gt;My company seems to love Jira&amp;rsquo;s &amp;ldquo;custom fields&amp;rdquo;, with an inconvenient side effect that I can&amp;rsquo;t copy and paste a ticket content (since it is split into multiple fields, and by multiple I mean a lot). Inconvenience compounded by the fact they don&amp;rsquo;t bother translating the tickets into English anymore. All that to say I was on the market for a JIRA mcp, but somehow I do not feel comfortable using the code from &amp;ldquo;somedude89/jira-mcp&amp;rdquo; github repository.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Controlling the Raspberry Pi 4 fan</title>
-      <link>http://localhost:1313/draft/2025-02-16-controlling-the-raspberry-pi-4-fan/</link>
-      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/draft/2025-02-16-controlling-the-raspberry-pi-4-fan/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been using my raspberry more and more since I started degoogling. I have a bunch of stuff running on it (Jellyfin, Pihole etc).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Concurrent exact colver solving - Parallelizing Knuth&#39;s X algorithm</title>
-      <link>http://localhost:1313/draft/2025-02-08-concurrent-exact-colver-solving-parallelizing-knuth-s-x-algorithm/</link>
-      <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/draft/2025-02-08-concurrent-exact-colver-solving-parallelizing-knuth-s-x-algorithm/</guid>
-      <description>&lt;p&gt;I just want a journal of my thoughts on the issue. The backtracking algorithm is trivially paralellizable if you fork the process at some branch, but the problem is that doubles the memory usage (I know about &amp;ldquo;copy on write&amp;rdquo;, but eventually both childs will touch almost all rows).&lt;/p&gt;
-&lt;p&gt;I think there is a way to parallelize work for crossword problems in particular: if you think of the crossword grid as a graph (the words being the nodes, with an edge when they share a letter) then you can cut the graph in two, solve each half concurrently, and the whole puzzle is solved if both halves share the same &amp;ldquo;frontier&amp;rdquo; words.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://blog.jmarhic.com/draft/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
