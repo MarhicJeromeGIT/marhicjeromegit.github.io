@@ -64,9 +64,6 @@ params:
 
   # Enable sidebar
   ShowSidebar: true
-  ShowReadingTime: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
 
   # Author/social (shown in sidebar)
   author: "Jerome Marhic"
