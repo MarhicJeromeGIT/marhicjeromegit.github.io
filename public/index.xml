@@ -83,13 +83,6 @@
       <description>&lt;p&gt;Google did me dirty this week and I&amp;rsquo;m salty, so let me tell you. The other day I received an email informing me that my YouTube Premium subscription had been renewed, which surprised me because I canceled it about 6 months ago, and I haven&amp;rsquo;t missed it ever since (thanks, &lt;a href=&#34;https://github.com/yt-dlp/yt-dlp&#34;&gt;yt-dlp&lt;/a&gt;!). I first thought it was my daughter&amp;rsquo;s shenanigans, but after a closer look I had only &amp;ldquo;paused&amp;rdquo; the subscription instead of canceling it, and Google conveniently failed to inform me it was going to be restarted&amp;hellip; No advance email like &amp;ldquo;your subscription will restart in a few days,&amp;rdquo; just &amp;ldquo;whoops, we restarted your subscription and you&amp;rsquo;ve been charged 13 euros, teehee.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>MCP and DIY</title>
-      <link>http://localhost:1313/draft/2025-07-11-mcp-and-diy/</link>
-      <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/draft/2025-07-11-mcp-and-diy/</guid>
-      <description>&lt;p&gt;My company seems to love Jira&amp;rsquo;s &amp;ldquo;custom fields&amp;rdquo;, with an inconvenient side effect that I can&amp;rsquo;t copy and paste a ticket content (since it is split into multiple fields, and by multiple I mean a lot). Inconvenience compounded by the fact they don&amp;rsquo;t bother translating the tickets into English anymore. All that to say I was on the market for a JIRA mcp, but somehow I do not feel comfortable using the code from &amp;ldquo;somedude89/jira-mcp&amp;rdquo; github repository.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>July Update</title>
       <link>http://localhost:1313/post/2025-07-05-july-update/</link>
       <pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
@@ -158,26 +151,11 @@ Agentic coding/research is all the rage today and I got the idea of making an &a
 &lt;p&gt;I&amp;rsquo;ve also rewritten a big part of the backend of &lt;a href=&#34;https://prosettr.com&#34;&gt;Prosettr.com&lt;/a&gt;. In a HackerNews thread about Donald Knuth (&lt;a href=&#34;https://news.ycombinator.com/item?id=42970240&#34;&gt;Donald Knuth&amp;rsquo;s 2024 Christmas Lecture: Strong and Weak Components&lt;/a&gt;), I learned there was an improvement to the algorithm that my app is based on, Dancing Links. I&amp;rsquo;m not going to go into much detail here (maybe in a future post), but I procured &lt;em&gt;The Art of Computer Programming&lt;/em&gt; Volume 4B, and indeed, the improved version uses half the memory, with each option&amp;rsquo;s items having only up and down links, and no left and right links—those being replaced by a &amp;ldquo;spacer&amp;rdquo; node. Here&amp;rsquo;s my original implementation in Go I made while following the chapter: &lt;a href=&#34;https://github.com/goverture/exact_cover/blob/master/examples/backtrack_aocp/main.go&#34;&gt;/backtrack_aocp/main.go&lt;/a&gt;. Then I replaced the previous implementation with this one, with some added optimizations (support for secondary columns, using channels instead of an input matrix, another channel to output the solutions, etc.).&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Controlling the Raspberry Pi 4 fan</title>
-      <link>http://localhost:1313/draft/2025-02-16-controlling-the-raspberry-pi-4-fan/</link>
-      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/draft/2025-02-16-controlling-the-raspberry-pi-4-fan/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been using my raspberry more and more since I started degoogling. I have a bunch of stuff running on it (Jellyfin, Pihole etc).&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Fed up with Google ads</title>
       <link>http://localhost:1313/post/2025-02-14-google-ads/</link>
       <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/2025-02-14-google-ads/</guid>
       <description>&lt;p&gt;So I just got a Galaxy S 23 FE phone to replace my recently lost Realme crapphone. And&amp;hellip; frankly, it&amp;rsquo;s not much better. It came loaded with a LOT of bloat: Samsung apps (Galaxy Shop?), Microsoft apps (Copilot, Linkedin&amp;hellip;), Netflix, and a bunch of crapware like &amp;ldquo;AR Doodle&amp;rdquo;, &amp;ldquo;AR Emoji&amp;rdquo; that are somehow running in the background. Of course, I cannot uninstall any of those without rooting my phone, if it&amp;rsquo;s even possible.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Concurrent exact colver solving - Parallelizing Knuth&#39;s X algorithm</title>
-      <link>http://localhost:1313/draft/2025-02-08-concurrent-exact-colver-solving-parallelizing-knuth-s-x-algorithm/</link>
-      <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/draft/2025-02-08-concurrent-exact-colver-solving-parallelizing-knuth-s-x-algorithm/</guid>
-      <description>&lt;p&gt;I just want a journal of my thoughts on the issue. The backtracking algorithm is trivially paralellizable if you fork the process at some branch, but the problem is that doubles the memory usage (I know about &amp;ldquo;copy on write&amp;rdquo;, but eventually both childs will touch almost all rows).&lt;/p&gt;
-&lt;p&gt;I think there is a way to parallelize work for crossword problems in particular: if you think of the crossword grid as a graph (the words being the nodes, with an edge when they share a letter) then you can cut the graph in two, solve each half concurrently, and the whole puzzle is solved if both halves share the same &amp;ldquo;frontier&amp;rdquo; words.&lt;/p&gt;</description>
     </item>
     <item>
       <title>January 2025 retrospective</title>
