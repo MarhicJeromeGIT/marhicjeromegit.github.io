@@ -16,4 +16,5 @@ hugo server -D
 
 # Build for deploy
 hugo --environment production
+git subtree push --prefix public origin gh-pages
 
