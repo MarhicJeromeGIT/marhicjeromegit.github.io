@@ -35,8 +35,8 @@ author:
 
 params:
   env: production
-  description: "Write an awesome description for your new site here. It appears in meta tags and feeds."
-  keywords: ["blog", "backend", "development", "open-source"]
+  description: "My projects and my life."
+  keywords: ["blog", "backend", "development", "open-source", "go", "golang", "pocketbase", "docker"]
 
   # Profile info (PaperMod shows this in home/about widgets)
   # Theme options

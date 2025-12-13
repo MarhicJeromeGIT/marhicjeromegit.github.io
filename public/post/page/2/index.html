@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,17 +9,17 @@
 <meta name="keywords" content="">
 <meta name="description" content="Posts - Daily Scream">
 <meta name="author" content="Jerome Marhic">
-<link rel="canonical" href="http://localhost:1313/post/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css" integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="canonical" href="https://blog.jmarhic.com/post/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.jmarhic.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.jmarhic.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.jmarhic.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.jmarhic.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.jmarhic.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/post/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/post/">
+<link rel="alternate" type="application/rss+xml" href="https://blog.jmarhic.com/post/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://blog.jmarhic.com/post/">
 <noscript>
     <style>
         #theme-toggle,
@@ -40,31 +40,46 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="http://localhost:1313/post/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://blog.jmarhic.com/post/">
   <meta property="og:site_name" content="Daily Scream">
   <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Write an awesome description for your new site here. It appears in meta tags and feeds.">
+  <meta property="og:description" content="My projects and my life.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="Write an awesome description for your new site here. It appears in meta tags and feeds.">
+<meta name="twitter:description" content="My projects and my life.">
 
 
 <script type="application/ld+json">
@@ -76,29 +91,17 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://localhost:1313/post/"
+      "item": "https://blog.jmarhic.com/post/"
     }
   ]
 }
 </script>
 </head>
-
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Daily Scream (Alt + H)">
+            <a href="https://blog.jmarhic.com/" accesskey="h" title="Daily Scream (Alt + H)">
                 <img src="https://avatars.githubusercontent.com/u/10737949?v=4" alt="" aria-label="logo"
                     height="35">Daily Scream</a>
             <div class="logo-switches">
@@ -129,7 +132,7 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://blog.jmarhic.com/">Home</a></div>
   <h1>
     Posts
   </h1>
@@ -144,8 +147,8 @@
     <p>Google did me dirty this week and I’m salty, so let me tell you. The other day I received an email informing me that my YouTube Premium subscription had been renewed, which surprised me because I canceled it about 6 months ago, and I haven’t missed it ever since (thanks, yt-dlp!). I first thought it was my daughter’s shenanigans, but after a closer look I had only “paused” the subscription instead of canceling it, and Google conveniently failed to inform me it was going to be restarted… No advance email like “your subscription will restart in a few days,” just “whoops, we restarted your subscription and you’ve been charged 13 euros, teehee.”
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-25 00:00:00 +0000 UTC'>July 25, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to I apologize for the confusion. You&#39;re absolutely right." href="http://localhost:1313/post/2025-07-25-i-apologize-for-the-confusion-you-re-absolutely-right/"></a>
+  <footer class="entry-footer"><span title='2025-07-25 00:00:00 +0000 UTC'>July 25, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to I apologize for the confusion. You&#39;re absolutely right." href="https://blog.jmarhic.com/post/2025-07-25-i-apologize-for-the-confusion-you-re-absolutely-right/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -158,8 +161,8 @@
 The main changes that enabled going from step 11 (Wordle answer) to 16 were adding a “search tool” based on OpenAI web search tool and changing the reasoning effort from “medium” to “high”. The current version of the code is here : https://github.com/goverture/password-game-agent/blob/master/manually.py I’m still making regular changes and trying new ideas to make progress. I’ve noticed we often seem to get stuck for various reason (for instance a badly recognized Capcha), so I want to add a new step to ensure that we make progress consistently, or backtrack, in order to not get stuck.
 </p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-05 00:00:00 +0000 UTC'>July 5, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to July Update" href="http://localhost:1313/post/2025-07-05-july-update/"></a>
+  <footer class="entry-footer"><span title='2025-07-05 00:00:00 +0000 UTC'>July 5, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to July Update" href="https://blog.jmarhic.com/post/2025-07-05-july-update/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -172,8 +175,8 @@ The main changes that enabled going from step 11 (Wordle answer) to 16 were addi
 Here’s where I got so far, using ChatGPT 4o and Playwright MCP (only gave it the navigate and type tools for now). It’s solving correctly the first few steps, but gets stuck at the “sponsor” rule because it cannot view the image. The next step is to give it access to the playwright’s screenshot tool. Let’s see how far it can go !
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-06-18 00:00:00 +0000 UTC'>June 18, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to The password game agent" href="http://localhost:1313/post/2025-06-18-the-password-game-agent/"></a>
+  <footer class="entry-footer"><span title='2025-06-18 00:00:00 +0000 UTC'>June 18, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to The password game agent" href="https://blog.jmarhic.com/post/2025-06-18-the-password-game-agent/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -186,8 +189,8 @@ Here’s where I got so far, using ChatGPT 4o and Playwright MCP (only gave it t
 Yesterday we got the announcement that Pocket was saying goodbye. Kind of bummed because I found the service convenient, though I just used it as a link bookmark (I never cared much about the reading mode, I always go to the original link - though apparently that worked well with the Kobo e-reader). Anyway I switched to a self-hosted alternative immediately: Wallabag. It’s kind of sluggish but it does the job, and it has an Android app so I can still “share link” to save a link from my phone.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-05-25 00:00:00 +0000 UTC'>May 25, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to May update" href="http://localhost:1313/post/2025-05-25-may-update/"></a>
+  <footer class="entry-footer"><span title='2025-05-25 00:00:00 +0000 UTC'>May 25, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to May update" href="https://blog.jmarhic.com/post/2025-05-25-may-update/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -199,8 +202,8 @@ Yesterday we got the announcement that Pocket was saying goodbye. Kind of bummed
     <p>So MCP is all the rage these days, and it’s not very complex: it’s basically a standardized way to provide tools to LLMs. So you have an RPC server that provides a description of the tools and the parameters they expect, and your client (a LLM based application) can connect to it and tell the LLM what tools are available, and the LLM can decide to call them when appropriate. Easy stuff and the SDK provided do most of the heavy lifting.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-05-04 00:00:00 +0000 UTC'>May 4, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to My First MCP server" href="http://localhost:1313/post/2025-05-04-my-first-mcp-server/"></a>
+  <footer class="entry-footer"><span title='2025-05-04 00:00:00 +0000 UTC'>May 4, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to My First MCP server" href="https://blog.jmarhic.com/post/2025-05-04-my-first-mcp-server/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -212,8 +215,8 @@ Yesterday we got the announcement that Pocket was saying goodbye. Kind of bummed
     <p>Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven’t been doing much in the past 3 weeks. Since I stopped working on it, I’ve released my thematic crossword generation app, Prosettr, to a complete (and expected) indifference (zero traffic came from the HackerNews announcement, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I’m quite happy with the result!
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-12 00:00:00 +0000 UTC'>April 12, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to April update" href="http://localhost:1313/post/2025-04-12-april-update/"></a>
+  <footer class="entry-footer"><span title='2025-04-12 00:00:00 +0000 UTC'>April 12, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to April update" href="https://blog.jmarhic.com/post/2025-04-12-april-update/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -226,8 +229,8 @@ Yesterday we got the announcement that Pocket was saying goodbye. Kind of bummed
 The week before however I gave a try to Browser Use, a tool that allows LLMs to use the browser more effectively. I haven’t read in detail how it works but it seems to highlight the interactive areas (buttons etc.) and then take a screenshot for analysis, instead of only sending the DOM as text. It worked pretty well, I was able to fill a form entirely with it (prompting it to not press submit!), and to use Google Translate as well. I don’t have a special use case idea for it at the moment.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-23 00:00:00 +0000 UTC'>March 23, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to Welcome to Liam" href="http://localhost:1313/post/2025-03-23-welcome-to-liam/"></a>
+  <footer class="entry-footer"><span title='2025-03-23 00:00:00 +0000 UTC'>March 23, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to Welcome to Liam" href="https://blog.jmarhic.com/post/2025-03-23-welcome-to-liam/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -239,8 +242,8 @@ The week before however I gave a try to Browser Use, a tool that allows LLMs to 
     <p>Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about AWS CDK. As a learning step, I’ve made a small template to deploy a static website on S3 &#43; CloudFront for the frontend and ALB &#43; ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it’s a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it’s really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-09 00:00:00 +0000 UTC'>March 9, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to First steps with CDK" href="http://localhost:1313/post/2025-03-09-trying-cdk-and-k6/"></a>
+  <footer class="entry-footer"><span title='2025-03-09 00:00:00 +0000 UTC'>March 9, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to First steps with CDK" href="https://blog.jmarhic.com/post/2025-03-09-trying-cdk-and-k6/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -253,8 +256,8 @@ The week before however I gave a try to Browser Use, a tool that allows LLMs to 
 I’ve also rewritten a big part of the backend of Prosettr.com. In a HackerNews thread about Donald Knuth (Donald Knuth’s 2024 Christmas Lecture: Strong and Weak Components), I learned there was an improvement to the algorithm that my app is based on, Dancing Links. I’m not going to go into much detail here (maybe in a future post), but I procured The Art of Computer Programming Volume 4B, and indeed, the improved version uses half the memory, with each option’s items having only up and down links, and no left and right links—those being replaced by a “spacer” node. Here’s my original implementation in Go I made while following the chapter: /backtrack_aocp/main.go. Then I replaced the previous implementation with this one, with some added optimizations (support for secondary columns, using channels instead of an input matrix, another channel to output the solutions, etc.).
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-28 00:00:00 +0000 UTC'>February 28, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to February update" href="http://localhost:1313/post/2025-02-28-february-update/"></a>
+  <footer class="entry-footer"><span title='2025-02-28 00:00:00 +0000 UTC'>February 28, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to February update" href="https://blog.jmarhic.com/post/2025-02-28-february-update/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -266,22 +269,22 @@ I’ve also rewritten a big part of the backend of Prosettr.com. In a HackerNews
     <p>So I just got a Galaxy S 23 FE phone to replace my recently lost Realme crapphone. And… frankly, it’s not much better. It came loaded with a LOT of bloat: Samsung apps (Galaxy Shop?), Microsoft apps (Copilot, Linkedin…), Netflix, and a bunch of crapware like “AR Doodle”, “AR Emoji” that are somehow running in the background. Of course, I cannot uninstall any of those without rooting my phone, if it’s even possible.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-14 00:00:00 +0000 UTC'>February 14, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jerome Marhic</footer>
-  <a class="entry-link" aria-label="post link to Fed up with Google ads" href="http://localhost:1313/post/2025-02-14-google-ads/"></a>
+  <footer class="entry-footer"><span title='2025-02-14 00:00:00 +0000 UTC'>February 14, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Jerome Marhic</span></footer>
+  <a class="entry-link" aria-label="post link to Fed up with Google ads" href="https://blog.jmarhic.com/post/2025-02-14-google-ads/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/post/">
+    <a class="prev" href="https://blog.jmarhic.com/post/">
       «&nbsp;Prev&nbsp;
     </a>
-    <a class="next" href="http://localhost:1313/post/page/3/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://blog.jmarhic.com/post/page/3/">Next&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Daily Scream</a></span> · 
+        <span>&copy; 2025 <a href="https://blog.jmarhic.com/">Daily Scream</a></span> · 
 
     <span>
         Powered by
@@ -296,9 +299,14 @@ I’ve also rewritten a big part of the backend of Prosettr.com. In a HackerNews
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -339,11 +347,12 @@ I’ve also rewritten a big part of the backend of Prosettr.com. In a HackerNews
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -17,4 +17,3 @@ hugo server -D
 # Build for deploy
 hugo --environment production
 git subtree push --prefix public origin gh-pages
-ontent/post/2025-12-11-podpocket.md
