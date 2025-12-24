@@ -14,6 +14,3 @@ hugo new content content/post/2025-10-15-october-update.md
 # Run hugo (draft mode)
 hugo server -D
 
-# Build for deploy
-hugo --environment production
-git subtree push --prefix public origin gh-pages

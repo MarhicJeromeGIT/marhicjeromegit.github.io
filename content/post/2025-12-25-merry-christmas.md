@@ -2,6 +2,7 @@
 title: "Merry Christmas! 2025 Retrospective"
 date: 2025-12-20T09:24:15+09:00
 draft: false
+tags: ["retrospective", "2025", "projects", "personal", "christmas"]
 ---
 
 <img src="/assets/images/christmas_lego.jpg" alt="A Santa made of LEGO" height="500" loading="lazy" style="display:block;margin: 0 auto;" />
@@ -24,7 +25,7 @@ I've released four projects: [Prosettr.com](https://prosettr.com/) — a crosswo
 
 Notably, I built Podpocket on top of [PocketBase](https://pocketbase.io/), and it was such an enjoyable development experience. I can't wait to start a new project with it again soon.
 
-I've also worked on minor stuff in between: [The Password Game agent]({{< ref "2025-06-18-the-password-game-agent" >}}) — an agent that plays [Neal.fun's Password Game](https://neal.fun/password-game/); [Pillmish](2025-08-09-pillmish.md) — training a small LLM from scratch; etc. Given the time limitations, I'm happy with this year's output.
+I've also worked on minor stuff in between: [The Password Game agent]({{< ref "2025-06-18-the-password-game-agent" >}}) — an agent that plays [Neal.fun's Password Game](https://neal.fun/password-game/); [Pillmish]({{< ref "2025-08-09-pillmish" >}}) — training a small LLM from scratch; etc. Given the time limitations, I'm happy with this year's output.
 
 ### Tech stuff
 
