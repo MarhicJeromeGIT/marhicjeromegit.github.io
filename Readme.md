@@ -12,5 +12,7 @@ git subtree push --prefix public origin gh-pages
 hugo new content content/post/2025-10-15-october-update.md
 
 # Run hugo (draft mode)
-hugo server -D
+# (piece of shit)
+
+hugo server --watch --buildDrafts
 
