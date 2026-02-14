@@ -2,18 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Personal on Daily Scream</title>
-    <link>https://blog.jmarhic.com/tags/personal/</link>
+    <link>http://localhost:1313/tags/personal/</link>
     <description>Recent content in Personal on Daily Scream</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <image>
+      <title>Daily Scream</title>
+      <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
+      <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
+    </image>
+    <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Dec 2025 09:24:15 +0900</lastBuildDate>
-    <atom:link href="https://blog.jmarhic.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Merry Christmas! 2025 Retrospective</title>
-      <link>https://blog.jmarhic.com/post/2025-12-25-merry-christmas/</link>
+      <link>http://localhost:1313/post/2025-12-25-merry-christmas/</link>
       <pubDate>Sat, 20 Dec 2025 09:24:15 +0900</pubDate>
-      <guid>https://blog.jmarhic.com/post/2025-12-25-merry-christmas/</guid>
-      <description>&lt;img src=&#34;https://blog.jmarhic.com/assets/images/christmas_lego.jpg&#34; alt=&#34;A Santa made of LEGO&#34; height=&#34;500&#34; loading=&#34;lazy&#34; style=&#34;display:block;margin: 0 auto;&#34; /&gt;
+      <guid>http://localhost:1313/post/2025-12-25-merry-christmas/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/assets/images/christmas_lego.jpg&#34; alt=&#34;A Santa made of LEGO&#34; height=&#34;500&#34; loading=&#34;lazy&#34; style=&#34;display:block;margin: 0 auto;&#34; /&gt;
 &lt;p style=&#34;text-align:center&#34;&gt;&lt;em&gt;Merry Christmas!&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2025-retrospective&#34;&gt;2025 Retrospective&lt;/h2&gt;
 &lt;p&gt;What a year it has been! I got my second kid early this year and was plenty busy with child-rearing as my number one priority, but I somehow managed to put some stuff out. Let&amp;rsquo;s get through it.&lt;/p&gt;

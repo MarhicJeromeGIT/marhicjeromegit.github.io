@@ -2,45 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Daily Scream</title>
-    <link>https://blog.jmarhic.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Daily Scream</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <image>
+      <title>Daily Scream</title>
+      <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
+      <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
+    </image>
+    <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Dec 2025 09:24:15 +0900</lastBuildDate>
-    <atom:link href="https://blog.jmarhic.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2025</title>
-      <link>https://blog.jmarhic.com/tags/2025/</link>
+      <link>http://localhost:1313/tags/2025/</link>
       <pubDate>Sat, 20 Dec 2025 09:24:15 +0900</pubDate>
-      <guid>https://blog.jmarhic.com/tags/2025/</guid>
+      <guid>http://localhost:1313/tags/2025/</guid>
       <description></description>
     </item>
     <item>
       <title>Christmas</title>
-      <link>https://blog.jmarhic.com/tags/christmas/</link>
+      <link>http://localhost:1313/tags/christmas/</link>
       <pubDate>Sat, 20 Dec 2025 09:24:15 +0900</pubDate>
-      <guid>https://blog.jmarhic.com/tags/christmas/</guid>
+      <guid>http://localhost:1313/tags/christmas/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal</title>
-      <link>https://blog.jmarhic.com/tags/personal/</link>
+      <link>http://localhost:1313/tags/personal/</link>
       <pubDate>Sat, 20 Dec 2025 09:24:15 +0900</pubDate>
-      <guid>https://blog.jmarhic.com/tags/personal/</guid>
+      <guid>http://localhost:1313/tags/personal/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>https://blog.jmarhic.com/tags/projects/</link>
+      <link>http://localhost:1313/tags/projects/</link>
       <pubDate>Sat, 20 Dec 2025 09:24:15 +0900</pubDate>
-      <guid>https://blog.jmarhic.com/tags/projects/</guid>
+      <guid>http://localhost:1313/tags/projects/</guid>
       <description></description>
     </item>
     <item>
       <title>Retrospective</title>
-      <link>https://blog.jmarhic.com/tags/retrospective/</link>
+      <link>http://localhost:1313/tags/retrospective/</link>
       <pubDate>Sat, 20 Dec 2025 09:24:15 +0900</pubDate>
-      <guid>https://blog.jmarhic.com/tags/retrospective/</guid>
+      <guid>http://localhost:1313/tags/retrospective/</guid>
       <description></description>
     </item>
   </channel>
