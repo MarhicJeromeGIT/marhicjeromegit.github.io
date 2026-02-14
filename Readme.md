@@ -39,11 +39,10 @@ Force-add the public directory (since it's gitignored):
 	git add -f public
 	git commit -am "Publish: new post YYYY-MM-DD-title"
 
+
 Then push to GitHub Pages:
 
-	git subtree split --prefix public -b gh-pages-tmp
-	git push -f origin gh-pages-tmp:gh-pages
-	git branch -D gh-pages-tmp
+	git subtree push --prefix public origin gh-pages
 
 ## Notes
 - You only need to use `--buildDrafts` when previewing drafts locally.

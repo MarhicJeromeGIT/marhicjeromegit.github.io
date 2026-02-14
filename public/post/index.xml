@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Daily Scream</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jan 2026 23:23:07 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 09:41:14 +0900</lastBuildDate>
     <atom:link href="https://blog.jmarhic.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>February 2026 - Rubycube</title>
+      <link>https://blog.jmarhic.com/post/2026-02-14-rubycube/</link>
+      <pubDate>Sat, 14 Feb 2026 09:41:14 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-02-14-rubycube/</guid>
+      <description>&lt;p&gt;So I got this idea of making a Rubik&amp;rsquo;s Cube solver in Ruby and I would call it RubyCube. Hilarious, right? But kind of stupid, because nobody really cares what the solver is written in as long as it actually works. Looking back, I think similarly few users would care whether I vibe-coded it with AI or handcrafted each line, especially given that I&amp;rsquo;m not open-sourcing it. Here, for what matters, I vibe-coded the front entirely (I just told Copilot to use &lt;a href=&#34;https://threejs.org/&#34;&gt;three.js&lt;/a&gt;, don&amp;rsquo;t ask me more) and manually coded the backend solver in Ruby.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>January Update</title>
       <link>https://blog.jmarhic.com/post/2026-01-26-january-update/</link>
