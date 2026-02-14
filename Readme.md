@@ -34,10 +34,10 @@ This generates the static site in the `public/` directory.
 
 ## 5. Commit and Deploy
 
-Force-add the public directory (since it's gitignored):
+Commit all changes:
 
-	git add -f public
-	git commit -am "Publish: new post YYYY-MM-DD-title"
+	git add -A
+	git commit -m "Publish: new post YYYY-MM-DD-title"
 
 
 Then push to GitHub Pages:
