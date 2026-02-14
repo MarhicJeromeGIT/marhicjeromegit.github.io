@@ -42,7 +42,9 @@ Force-add the public directory (since it's gitignored):
 
 Then push to GitHub Pages:
 
-	git subtree push --prefix public origin gh-pages
+	git subtree split --prefix public -b temp-gh-pages
+	git push -f origin temp-gh-pages:gh-pages
+	git branch -D temp-gh-pages
 
 ## Notes
 - You only need to use `--buildDrafts` when previewing drafts locally.
