@@ -28,6 +28,12 @@ and make sure the date is correct.
 
 ## 4. Build the Site
 
+For production deployment:
+
+	hugo --environment production
+
+Or simply:
+
 	hugo
 
 This generates the static site in the `public/` directory.
