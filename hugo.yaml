@@ -3,10 +3,29 @@ title: "Daily Scream"
 languageCode: "en-us"
 defaultContentLanguage: "en"
 disablePathToLower: true
-pagination:
-  pagerSize: 10
 
-theme: "papermod"
+pagination:
+  pagerSize: 5
+
+theme: ["papermod"]
+
+# Enable features
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# Enable search functionality
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+# Minify output
+minify:
+  disableXML: true
+  minifyOutput: true
 
 # Exclude junk files like Jekyll's exclude
 ignoreFiles:
@@ -28,58 +47,157 @@ taxonomies:
   tag: "tags"
   category: "categories"
 
-# Author (PaperMod uses params.author mostly)
-author:
-  name: "Jerome Marhic"
-  email: "marhic.jerome@gmail.com"
-
 params:
-  env: production
+  env: production # to enable google analytics, opengraph, twitter-cards and schema
+  title: "Daily Scream"
   description: "My projects and my life."
   keywords: ["blog", "backend", "development", "open-source", "go", "golang", "pocketbase", "docker"]
-
-  # Profile info (PaperMod shows this in home/about widgets)
-  # Theme options
-  defaultTheme: auto          # dark, light, or auto
+  author: "Jerome Marhic"
+  # author: ["Jerome Marhic"] # multiple authors
+  images: ["https://avatars.githubusercontent.com/u/10737949?v=4"]
+  DateFormat: "January 2, 2006"
+  
+  # Theme settings
+  defaultTheme: auto # dark, light, or auto
+  disableThemeToggle: false
+  
+  # Display settings
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  TocOpen: false
-  comments: false             # toggle if you want comment integration
-  disableThemeToggle: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
 
-  # Sidebar settings
-  profileMode:
-    enabled: false          # disable the big profile card on homepage
-  showtoc: true             # optional, shows table of contents on posts
+  # Assets configuration
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon.ico"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
 
-
-  # Sidebar profile info
+  # Site label/branding
   label:
     text: "Daily Scream"
     icon: "https://avatars.githubusercontent.com/u/10737949?v=4"
     iconHeight: 35
 
-  # Enable sidebar
-  ShowSidebar: true
+  # Home-info mode (disabled in favor of regular posts)
+  # homeInfoParams:
+  #   Title: "Hi there 👋"
+  #   Content: "Welcome to my blog about development and projects"
 
-  # Author/social (shown in sidebar)
-  author: "Jerome Marhic"
+  # Profile mode (disabled in favor of regular mode)
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: "Jerome Marhic"
+    subtitle: "Developer & Tech Enthusiast"
+    imageUrl: "https://avatars.githubusercontent.com/u/10737949?v=4"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Jerome Marhic"
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+
+  # Social icons
   socialIcons:
     - name: github
       url: "https://github.com/jmarhic"
-    - name: twitter
-      url: "https://twitter.com/yourhandle"
     - name: email
       url: "mailto:marhic.jerome@gmail.com"
+    - name: twitter
+      url: "https://twitter.com/yourhandle"
 
-# Syntax highlighting
+  # Analytics (uncomment and configure if needed)
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  # Cover image settings
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+    responsiveImages: true
+    linkFullImages: true
+
+  # Edit post settings
+  editPost:
+    URL: "https://github.com/jmarhic/blog.jmarhic.com/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # Search configuration
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+# Menu configuration
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Posts
+      url: /post/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 50
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 60
+
+# Syntax highlighting - use Hugo's built-in Chroma
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
 markup:
   goldmark:
     renderer:
       unsafe: true
   highlight:
     noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
     lineNos: true
+    # style: monokai
