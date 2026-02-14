@@ -1,18 +1,59 @@
 
-git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/papermod
-echo "theme = 'papermod'" >> hugo.toml
 
-# Deploy
+# Blog Workflow
 
-hugo
-git subtree push --prefix public origin gh-pages
+## 1. Create a New Post
 
+Run (replace the filename as needed):
 
-# New post
-hugo new content content/post/2025-10-15-october-update.md
+	hugo new content/post/YYYY-MM-DD-title.md
 
-# Run hugo (draft mode)
-# (piece of shit)
+Edit the new file in `content/post/`.
 
-hugo server --watch --buildDrafts
+## 2. Preview Locally (Draft Mode)
+
+To preview drafts and unpublished posts:
+
+	hugo server --watch --buildDrafts
+
+Open the local URL Hugo prints (usually http://localhost:1313) in your browser.
+
+## 3. Publish the Post
+
+In your post's front matter, set:
+
+	draft: false
+
+and make sure the date is correct.
+
+## 4. Build the Site
+
+	hugo
+
+This generates the static site in the `public/` directory.
+
+## 5. Commit and Deploy
+
+Force-add the public directory (since it's gitignored):
+
+	git add -f public
+	git commit -am "Publish: new post YYYY-MM-DD-title"
+
+Then push to GitHub Pages:
+
+	git subtree split --prefix public -b gh-pages-tmp
+	git push -f origin gh-pages-tmp:gh-pages
+	git branch -D gh-pages-tmp
+
+## Notes
+- You only need to use `--buildDrafts` when previewing drafts locally.
+- Only posts with `draft: false` and a valid date will be published.
+- Always run `hugo` and commit before deploying.
+- If you add images, make sure they're in the right static folder.
+
+---
+Theme setup (one-time):
+
+	git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/papermod
+	echo "theme = 'papermod'" >> hugo.toml
 
