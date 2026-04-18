@@ -9,10 +9,18 @@
       <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
       <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
     </image>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo -- 0.151.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Feb 2026 09:41:14 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 12:45:58 +0900</lastBuildDate>
     <atom:link href="https://blog.jmarhic.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>April 2026 - Happy Easter</title>
+      <link>https://blog.jmarhic.com/post/2026-04-05-happy-easter/</link>
+      <pubDate>Sun, 05 Apr 2026 12:45:58 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-04-05-happy-easter/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been in a &amp;ldquo;space&amp;rdquo; period lately. Been reading &lt;a href=&#34;https://www.goodreads.com/book/show/54493401-project-hail-mary&#34;&gt;Project Hail Mary&lt;/a&gt; by Andy Weir and really enjoyed it, full of surprised and not a page felt like filler. Same as video games, most books bore me easily these days and feel like a waste of time, but this was 100% worse my time.&lt;/p&gt;
+&lt;p&gt;Speaking of games, I&amp;rsquo;ve been replaying Outer Wilds. Not gonna spoil it or anything, it&amp;rsquo;s still one of the best game I know. The feeling of getting in the pilot seat, strapping the seat belts and firing the engines, en-route for whatever planet I feel like, is magical every time.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>February 2026 - Rubycube</title>
       <link>https://blog.jmarhic.com/post/2026-02-14-rubycube/</link>
@@ -88,8 +96,7 @@
 &lt;p&gt;A programmer says &amp;ldquo;I have 2 kids, and the sum of their age is 4&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The logician thinks and says &amp;ldquo;not enough info&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The programmer adds &amp;ldquo;The eldest likes Bluey&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Alright, I&amp;rsquo;ve been working on a new project, &lt;a href=&#34;https://github.com/goverture/goxy&#34;&gt;Goxy&lt;/a&gt;: an OpenAI proxy that track &amp;amp; limit spending. You can set an hourly limit (say 1$ per hour) and the proxy will return 429 errors when the spend reaches the limit. That lets you release LLM using projects while being confident you won&amp;rsquo;t get hit with a thousand-dollar bill at the end of the month.&lt;/p&gt;</description>
     </item>
     <item>
