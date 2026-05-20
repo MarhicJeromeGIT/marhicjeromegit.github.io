@@ -9,10 +9,18 @@
       <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
       <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
     </image>
-    <generator>Hugo -- 0.151.0</generator>
+    <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2026 12:45:58 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 23:17:20 +0900</lastBuildDate>
     <atom:link href="https://blog.jmarhic.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>May 2026 Update - OpenCode and CTF</title>
+      <link>https://blog.jmarhic.com/post/2026-05-20-may-update/</link>
+      <pubDate>Wed, 20 May 2026 23:17:20 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-05-20-may-update/</guid>
+      <description>&lt;p&gt;A few days ago, there was a trending post on HN called &amp;ldquo;The CTF scene is dead.&amp;rdquo; (&lt;a href=&#34;https://kabir.au/blog/the-ctf-scene-is-dead&#34;&gt;link&lt;/a&gt;), in which the author laments that CTF (capture the flag, &amp;ldquo;hacking&amp;rdquo; competitions) are dead due to being mostly solvable by AI, which actually made me want to try it!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve actually never done any CTF, so after some research, I ended up doing the first 15 levels of the OverTheWire &lt;a href=&#34;https://overthewire.org/wargames/bandit/bandit0.html&#34;&gt;Bandit&lt;/a&gt; game. Frankly it wasn&amp;rsquo;t super interesting (mostly running find commands with the right flags&amp;hellip;) due to it being aimed at absolute beginners.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>April 2026 - Happy Easter</title>
       <link>https://blog.jmarhic.com/post/2026-04-05-happy-easter/</link>
@@ -96,7 +104,8 @@
 &lt;p&gt;A programmer says &amp;ldquo;I have 2 kids, and the sum of their age is 4&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The logician thinks and says &amp;ldquo;not enough info&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The programmer adds &amp;ldquo;The eldest likes Bluey&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Alright, I&amp;rsquo;ve been working on a new project, &lt;a href=&#34;https://github.com/goverture/goxy&#34;&gt;Goxy&lt;/a&gt;: an OpenAI proxy that track &amp;amp; limit spending. You can set an hourly limit (say 1$ per hour) and the proxy will return 429 errors when the spend reaches the limit. That lets you release LLM using projects while being confident you won&amp;rsquo;t get hit with a thousand-dollar bill at the end of the month.&lt;/p&gt;</description>
     </item>
     <item>
