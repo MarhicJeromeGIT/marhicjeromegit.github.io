@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Math on Daily Scream</title>
+    <link>https://blog.jmarhic.com/tags/math/</link>
+    <description>Recent content in Math on Daily Scream</description>
+    <image>
+      <title>Daily Scream</title>
+      <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
+      <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
+    </image>
+    <generator>Hugo -- 0.167.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.jmarhic.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maths notes (1)</title>
+      <link>https://blog.jmarhic.com/post/2025-07-30-maths-notes-1/</link>
+      <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-07-30-maths-notes-1/</guid>
+      <description>&lt;p&gt;So I started reading a paper about diffusion (the original &lt;a href=&#34;https://arxiv.org/abs/2006.11239&#34;&gt;DDPM paper&lt;/a&gt;) and I was quickly out of my depth. I needed a refresher about probabilities, and actually even more basic stuff like exponential and integration. And I thought why not share the notes here! So this blog post is the content of a python notebook about exponential and the normal distribution, exported to markdown with &lt;code&gt;jupyter nbconvert&lt;/code&gt;. It&amp;rsquo;s not deep or anything, just a nice refresher for myself. Kind of a pain to write math formulas and get them displayed in my Jekyll blog but got it working with &lt;a href=&#34;https://www.mathjax.org/&#34;&gt;Mathjax&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

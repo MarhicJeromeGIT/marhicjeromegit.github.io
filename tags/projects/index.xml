@@ -11,8 +11,38 @@
     </image>
     <generator>Hugo -- 0.167.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Dec 2025 09:24:15 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 00:18:41 +0900</lastBuildDate>
     <atom:link href="https://blog.jmarhic.com/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>July 2026 Update - I became a reader</title>
+      <link>https://blog.jmarhic.com/post/2026-07-11-July-update/</link>
+      <pubDate>Sun, 12 Jul 2026 00:18:41 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-07-11-July-update/</guid>
+      <description>&lt;p&gt;My Japanese residence card expired in June, and with my company we decided not to renew it, instead I became a Vietnam-based foreign contractor. Not much change in practice, but I am not allowed to work in Japan anymore, which means I will visit less in the future. As I don&amp;rsquo;t want to forget my hard-learned Japanese, I decided to try and read more Japanese books. But I lack the time to commit to proper novels so ChatGPT recommended &lt;a href=&#34;https://syosetu.com&#34;&gt;Shōsetsuka ni Narō&lt;/a&gt; (lit. &amp;ldquo;let&amp;rsquo;s become an author&amp;rdquo;), a website where amateur writers post their web novels. Long story short, I made &lt;a href=&#34;https://natta.fly.dev/&#34;&gt;Dokusha ni natta&lt;/a&gt; (lit. &amp;ldquo;I became a reader&amp;rdquo;), a simple app that exports an ebook (epub or azw3 format) from a given novel code.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>May 2026 Update - OpenCode and CTF</title>
+      <link>https://blog.jmarhic.com/post/2026-05-20-may-update/</link>
+      <pubDate>Wed, 20 May 2026 23:17:20 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-05-20-may-update/</guid>
+      <description>&lt;p&gt;A few days ago, there was a trending post on HN called &amp;ldquo;The CTF scene is dead.&amp;rdquo; (&lt;a href=&#34;https://kabir.au/blog/the-ctf-scene-is-dead&#34;&gt;link&lt;/a&gt;), in which the author laments that CTF (capture the flag, &amp;ldquo;hacking&amp;rdquo; competitions) are dead due to being mostly solvable by AI, which actually made me want to try it!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve actually never done any CTF, so after some research, I ended up doing the first 15 levels of the OverTheWire &lt;a href=&#34;https://overthewire.org/wargames/bandit/bandit0.html&#34;&gt;Bandit&lt;/a&gt; game. Frankly it wasn&amp;rsquo;t super interesting (mostly running find commands with the right flags&amp;hellip;) due to it being aimed at absolute beginners.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>April 2026 - Happy Easter</title>
+      <link>https://blog.jmarhic.com/post/2026-04-05-happy-easter/</link>
+      <pubDate>Sun, 05 Apr 2026 12:45:58 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-04-05-happy-easter/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been in a &amp;ldquo;space&amp;rdquo; period lately. Been reading &lt;a href=&#34;https://www.goodreads.com/book/show/54493401-project-hail-mary&#34;&gt;Project Hail Mary&lt;/a&gt; by Andy Weir and really enjoyed it, full of surprised and not a page felt like filler. Same as video games, most books bore me easily these days and feel like a waste of time, but this was 100% worse my time.&lt;/p&gt;
+&lt;p&gt;Speaking of games, I&amp;rsquo;ve been replaying Outer Wilds. Not gonna spoil it or anything, it&amp;rsquo;s still one of the best game I know. The feeling of getting in the pilot seat, strapping the seat belts and firing the engines, en-route for whatever planet I feel like, is magical every time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>February 2026 - Rubycube</title>
+      <link>https://blog.jmarhic.com/post/2026-02-14-rubycube/</link>
+      <pubDate>Sat, 14 Feb 2026 09:41:14 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-02-14-rubycube/</guid>
+      <description>&lt;p&gt;So I got this idea of making a Rubik&amp;rsquo;s Cube solver in Ruby and I would call it RubyCube. Hilarious, right? But kind of stupid, because nobody really cares what the solver is written in as long as it actually works. Looking back, I think similarly few users would care whether I vibe-coded it with AI or handcrafted each line, especially given that I&amp;rsquo;m not open-sourcing it. Here, for what matters, I vibe-coded the front entirely (I just told Copilot to use &lt;a href=&#34;https://threejs.org/&#34;&gt;three.js&lt;/a&gt;, don&amp;rsquo;t ask me more) and manually coded the backend solver in Ruby.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Merry Christmas! 2025 Retrospective</title>
       <link>https://blog.jmarhic.com/post/2025-12-25-merry-christmas/</link>
@@ -25,6 +55,171 @@
 &lt;h2 id=&#34;the-good&#34;&gt;The good&lt;/h2&gt;
 &lt;h3 id=&#34;blogging&#34;&gt;Blogging&lt;/h3&gt;
 &lt;p&gt;28 posts in 2025. I managed to keep the blog alive, with around two new posts per month. I enjoy the process — it&amp;rsquo;s a nice outlet for venting and also sharing my projects. It even sometimes forced me to work on something new just to have something to write about!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Podpocket release</title>
+      <link>https://blog.jmarhic.com/post/2025-12-11-podpocket/</link>
+      <pubDate>Thu, 11 Dec 2025 10:10:18 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-12-11-podpocket/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been frustrated with YouTube Music as a podcast player ever since Google retired &lt;a href=&#34;https://killedbygoogle.com/&#34;&gt;Google Podcast&lt;/a&gt; last year, mostly because they now play ads before each episode! So I&amp;rsquo;ve decided to develop and release a minimal podcast player, &lt;a href=&#34;https://podpocket.jmarhic.com/&#34;&gt;Podpocket&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It was really a pleasure to develop it with &lt;a href=&#34;https://pocketbase.io/&#34;&gt;Pocketbase&lt;/a&gt;, as it handled everything I need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;authentication (including oauth) setup in a few clicks&lt;/li&gt;
+&lt;li&gt;a UI to create new collections (sqlite tables), and a complete admin dashboard&lt;/li&gt;
+&lt;li&gt;Even Cron jobs (to refresh the RSS feeds periodically)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And best of all, it&amp;rsquo;s written in Go so you can extend it super easily. For instance, I added an endpoint to register new RSS feeds, and I still have a single unified backend. This is unlike Firebase where you end up with a split architecture where some calls go directly to Firebase services and others to your custom backend. I&amp;rsquo;m definitely going to reuse it in my next project. A fun feature is the &lt;a href=&#34;https://pocketbase.io/docs/authentication/#users-impersonation&#34;&gt;user impersonation&lt;/a&gt; that lets an admin login as another user.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2025 11 24 Monday morning</title>
+      <link>https://blog.jmarhic.com/post/2025-11-24-monday-morning/</link>
+      <pubDate>Mon, 24 Nov 2025 00:03:02 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-11-24-monday-morning/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Vietnam has been hit hard by heavy rain lately, but the skies were clear this morning. I drove my daughter to school on a scooter, and since we were early we took a longer route across the river. From the bridge we saw a giant rubber duck they installed on the other side of the river, pretty cool ! Arrived at school she asked me to stay for the morning dance, so I watched her jumping to the sound of &lt;a href=&#34;https://www.youtube.com/watch?v=V6fGupFWQ7o&#34;&gt;DJ Raphi&amp;rsquo;s ABC song&lt;/a&gt; with 50 other kindergartners. That was an energetic morning ! Just what I needed so I could resume work on this sprint ticket.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2025 11 05 November Update</title>
+      <link>https://blog.jmarhic.com/post/2025-11-05-november-update/</link>
+      <pubDate>Wed, 05 Nov 2025 23:16:40 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-11-05-november-update/</guid>
+      <description>&lt;p&gt;A lot going on these days!&lt;/p&gt;
+&lt;p&gt;I succumbed to the hype and installed &lt;a href=&#34;https://omarchy.org/&#34;&gt;Omarchy&lt;/a&gt;, the new Linux distro by DHH. It&amp;rsquo;s basically Arch Linux with a tiling window manager (&lt;a href=&#34;https://hypr.land/&#34;&gt;Hyprland&lt;/a&gt;), but it comes pre-configured and installable with an ISO, which is super convenient compared to the usual Arch install process. So out of the box you get a very good-looking desktop with nice shortcuts and documentation.&lt;/p&gt;
+&lt;p&gt;Some will disagree with DHH&amp;rsquo;s preferences and choices, but realistically I would never have taken the time to configure Hyprland properly myself, so it&amp;rsquo;s nice to be able to rely on somebody&amp;rsquo;s taste (I trust DHH&amp;rsquo;s taste more than mine in that regard!). Same goes for the rest of the desktop environment (waybar for the top bar, walker for the app launcher&amp;hellip;). That was my main issue with Arch, too much choice and alternatives that I don&amp;rsquo;t really care about (I just want internet, not to have to choose a network manager&amp;hellip;). So I really see the appeal of Omarchy for many people, and it seems to be gaining popularity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logic riddle (October update)</title>
+      <link>https://blog.jmarhic.com/post/2025-10-15-october-update/</link>
+      <pubDate>Wed, 15 Oct 2025 15:04:24 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-10-15-october-update/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;A programmer says &amp;ldquo;I have 2 kids, and the sum of their age is 4&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The logician thinks and says &amp;ldquo;not enough info&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The programmer adds &amp;ldquo;The eldest likes Bluey&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Alright, I&amp;rsquo;ve been working on a new project, &lt;a href=&#34;https://github.com/goverture/goxy&#34;&gt;Goxy&lt;/a&gt;: an OpenAI proxy that track &amp;amp; limit spending. You can set an hourly limit (say 1$ per hour) and the proxy will return 429 errors when the spend reaches the limit. That lets you release LLM using projects while being confident you won&amp;rsquo;t get hit with a thousand-dollar bill at the end of the month.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>September Update</title>
+      <link>https://blog.jmarhic.com/post/2025-09-25-september-update/</link>
+      <pubDate>Thu, 25 Sep 2025 16:28:00 +0700</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-09-25-september-update/</guid>
+      <description>&lt;p&gt;I just came back from a two weeks vacation in France with my daughter, and without my laptop, which was pretty nice. As a result I don&amp;rsquo;t have much to say for this month !&lt;/p&gt;
+&lt;p&gt;After coming back I had an idea for a small project, a &amp;ldquo;guess who&amp;rdquo; app that I vibecoded in a few hours with &lt;a href=&#34;https://firebase.studio/&#34;&gt;Firebase Studio&lt;/a&gt;. It got me a Next.js+tailwindcss app pretty quickly, with LLM calls handled by &lt;a href=&#34;https://genkit.dev/&#34;&gt;Genkit&lt;/a&gt;. Originally it was using the Gemini API and hosted on Firebase, but I&amp;rsquo;ve changed it to GPT-5 and Fly.io for hosting.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Training a small LLM</title>
+      <link>https://blog.jmarhic.com/post/2025-08-16-training-a-small-llm/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-08-16-training-a-small-llm/</guid>
+      <description>&lt;p&gt;So in my [last post about Pilish]({% post_url 2025-08-09-pillmish %}) I mentioned that a follow up to get better results would be to use a LLM with word level tokenization. It&amp;rsquo;s actually a bad idea in general because the vocabulary size can be huge, and that&amp;rsquo;s why most LLM these days use BPE or subword tokenization, but I decided to give it a quick try and train a LLM from scratch with word level tokenization. Back in 2023 I used to be quite into finetuning and all that but this year I haven&amp;rsquo;t done much low level tinkering with LLM so it was a good exercise.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pillmish</title>
+      <link>https://blog.jmarhic.com/post/2025-08-09-pillmish/</link>
+      <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-08-09-pillmish/</guid>
+      <description>&lt;p&gt;A few days ago, I heard about &lt;a href=&#34;https://en.wikipedia.org/wiki/Pilish&#34;&gt;Pilish&lt;/a&gt; for the first time. As Wikipedia puts it, &lt;code&gt;Pilish is a style of constrained writing in which the lengths of consecutive words or sentences match the digits of the number π (pi).&lt;/code&gt; My second thought (right after &amp;ldquo;who would enjoy doing that&amp;rdquo;) was, this sounds easy for LLMs! So I set out to make a minimal proof of concept.&lt;/p&gt;
+&lt;p&gt;Long story short, the trick is to constrain the output to follow the digits of Pi—the same way that structured output (JSON, etc.) works. With Hugging Face Transformers, it&amp;rsquo;s easy to do with a custom &lt;code&gt;logits_processor&lt;/code&gt;. Here, we just constrain the tokens to those matching the desired number of characters at each step. I shared the code on &lt;a href=&#34;https://gist.github.com/MarhicJeromeGIT/d01f79363420c8c10d5aeba10c4c9960&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>July Update</title>
+      <link>https://blog.jmarhic.com/post/2025-07-05-july-update/</link>
+      <pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-07-05-july-update/</guid>
+      <description>&lt;p&gt;Just a quick update to say I am still making progress on the Password Game Agent project I mentioned last post. I have now reached up to step 16 where we need to solve a chess position&amp;hellip; Seems like a suitable job for a reasoning model !&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Step 16 of the password game require solving a chess puzzle.&#34; loading=&#34;lazy&#34; src=&#34;https://blog.jmarhic.com/assets/images/password_game_step16.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The main changes that enabled going from step 11 (Wordle answer) to 16 were adding a &amp;ldquo;search tool&amp;rdquo; based on &lt;a href=&#34;https://platform.openai.com/docs/guides/tools-web-search&#34;&gt;OpenAI web search tool&lt;/a&gt; and changing the reasoning effort from &amp;ldquo;medium&amp;rdquo; to &amp;ldquo;high&amp;rdquo;.
+The current version of the code is here : &lt;a href=&#34;https://github.com/goverture/password-game-agent/blob/master/manually.py&#34;&gt;https://github.com/goverture/password-game-agent/blob/master/manually.py&lt;/a&gt; I&amp;rsquo;m still making regular changes and trying new ideas to make progress. I&amp;rsquo;ve noticed we often seem to get stuck for various reason (for instance a badly recognized Capcha), so I want to add a new step to ensure that we make progress consistently, or backtrack, in order to not get stuck.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The password game agent</title>
+      <link>https://blog.jmarhic.com/post/2025-06-18-the-password-game-agent/</link>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-06-18-the-password-game-agent/</guid>
+      <description>&lt;p&gt;There is this javascript game called &lt;a href=&#34;https://neal.fun/password-game/&#34;&gt;The Password Game&lt;/a&gt; where you have to chose a password, following increasingly ludicrous requirements.
+Agentic coding/research is all the rage today and I got the idea of making an &amp;ldquo;agent&amp;rdquo; that would solve it. Conceptually it&amp;rsquo;s just about calling a LLM in a loop, giving it the proper tools and context until it solved the task at hand.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s where I got so far, using ChatGPT 4o and &lt;a href=&#34;https://github.com/microsoft/playwright-mcp&#34;&gt;Playwright MCP&lt;/a&gt; (only gave it the navigate and type tools for now). It&amp;rsquo;s solving correctly the first few steps, but gets stuck at the &amp;ldquo;sponsor&amp;rdquo; rule because it cannot view the image. The next step is to give it access to the playwright&amp;rsquo;s screenshot tool. Let&amp;rsquo;s see how far it can go !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First MCP server</title>
+      <link>https://blog.jmarhic.com/post/2025-05-04-my-first-mcp-server/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-05-04-my-first-mcp-server/</guid>
+      <description>&lt;p&gt;So MCP is all the rage these days, and it&amp;rsquo;s not very complex: it&amp;rsquo;s basically a standardized way to provide tools to LLMs. So you have an RPC server that provides a description of the tools and the parameters they expect, and your client (a LLM based application) can connect to it and tell the LLM what tools are available, and the LLM can decide to call them when appropriate. Easy stuff and the &lt;a href=&#34;https://github.com/modelcontextprotocol/typescript-sdk&#34;&gt;SDK provided&lt;/a&gt; do most of the heavy lifting.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>April update</title>
+      <link>https://blog.jmarhic.com/post/2025-04-12-april-update/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-04-12-april-update/</guid>
+      <description>&lt;p&gt;Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven&amp;rsquo;t been doing much in the past 3 weeks. Since I stopped working on it, I&amp;rsquo;ve released my thematic crossword generation app, &lt;a href=&#34;https://prosettr.com&#34;&gt;Prosettr&lt;/a&gt;, to a complete (and expected) indifference (zero traffic came from the &lt;a href=&#34;https://news.ycombinator.com/item?id=43521279&#34;&gt;HackerNews announcement&lt;/a&gt;, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I&amp;rsquo;m quite happy with the result!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First steps with CDK</title>
+      <link>https://blog.jmarhic.com/post/2025-03-09-trying-cdk-and-k6/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-03-09-trying-cdk-and-k6/</guid>
+      <description>&lt;p&gt;Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about &lt;a href=&#34;https://docs.aws.amazon.com/cdk/v2/guide/home.html&#34;&gt;AWS CDK&lt;/a&gt;. As a learning step, I&amp;rsquo;ve made a small template to deploy a static website on S3 + CloudFront for the frontend and ALB + ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it&amp;rsquo;s a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it&amp;rsquo;s really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>February update</title>
+      <link>https://blog.jmarhic.com/post/2025-02-28-february-update/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-02-28-february-update/</guid>
+      <description>&lt;p&gt;February went by in a blink! I barely had any time for myself this month between work, a pregnant wife, and my 2-year-old being in the &amp;ldquo;I want papa only&amp;rdquo; phase. These days, the first thing I do in the morning is play Lego. It beats doomscrolling, but at 7 a.m. and before my coffee, it&amp;rsquo;s tough to be creative. Here&amp;rsquo;s an elephant I made this morning—the trunk moves.&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+    &lt;img src=&#34;https://blog.jmarhic.com/assets/images/lego_elephant.jpg&#34; alt=&#34;An elephant in Lego&#34; width=&#34;300&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt;I&amp;rsquo;ve also rewritten a big part of the backend of &lt;a href=&#34;https://prosettr.com&#34;&gt;Prosettr.com&lt;/a&gt;. In a HackerNews thread about Donald Knuth (&lt;a href=&#34;https://news.ycombinator.com/item?id=42970240&#34;&gt;Donald Knuth&amp;rsquo;s 2024 Christmas Lecture: Strong and Weak Components&lt;/a&gt;), I learned there was an improvement to the algorithm that my app is based on, Dancing Links. I&amp;rsquo;m not going to go into much detail here (maybe in a future post), but I procured &lt;em&gt;The Art of Computer Programming&lt;/em&gt; Volume 4B, and indeed, the improved version uses half the memory, with each option&amp;rsquo;s items having only up and down links, and no left and right links—those being replaced by a &amp;ldquo;spacer&amp;rdquo; node. Here&amp;rsquo;s my original implementation in Go I made while following the chapter: &lt;a href=&#34;https://github.com/goverture/exact_cover/blob/master/examples/backtrack_aocp/main.go&#34;&gt;/backtrack_aocp/main.go&lt;/a&gt;. Then I replaced the previous implementation with this one, with some added optimizations (support for secondary columns, using channels instead of an input matrix, another channel to output the solutions, etc.).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>January 2025 retrospective</title>
+      <link>https://blog.jmarhic.com/post/2025-02-03-january-2025-retrospective/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-02-03-january-2025-retrospective/</guid>
+      <description>&lt;p&gt;Pretty good start to the year overall, I&amp;rsquo;ve managed to keep writing blog posts regularly. Not sure if anyone is reading them as there is no comment system and I don&amp;rsquo;t have any analytics set up yet, but it doesn&amp;rsquo;t matter for now—I&amp;rsquo;m just trying to get better at writing first. Mostly, I&amp;rsquo;m writing them as a memento, something I can look back on in the future, and also for the chance of influencing future LLMs, if only a tiny bit, with some of myself. I enjoyed a blog post about it recently, &lt;a href=&#34;https://benjamincongdon.me/blog/2025/01/25/AI-Slop-Suspicion-and-Writing-Back&#34;&gt;AI Slop, Suspicion, and Writing Back by Ben Congdon&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>January 2025, Second Week Update</title>
+      <link>https://blog.jmarhic.com/post/2025-01-14-january-2025-second-week-update/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-01-14-january-2025-second-week-update/</guid>
+      <description>&lt;p&gt;Already two weeks into January, it&amp;rsquo;s time for an update on my projects! I&amp;rsquo;m really happy with the progress on &lt;a href=&#34;https://prosettr.com&#34;&gt;Prosettr.com&lt;/a&gt;, my crossword generation app. It will soon be time to share it with the world (HackerNews&amp;hellip;). Yesterday evening, I added login functionality (a choice of email + password or Google sign-in) using Firebase Authentication, as well as a button to load PUZ files.&lt;/p&gt;
+&lt;p&gt;The latter was surprisingly easy to do: I gave ChatGPT o1-mini the &lt;a href=&#34;https://gist.github.com/sliminality/dab21fa834eae0a70193c7cd69c356d5&#34;&gt;PUZ format description&lt;/a&gt; and asked it for a loader/writer in Go with my expectations for the input/output, followed by an HTTP handler. Thirty minutes later, here we are with the &amp;ldquo;Upload PUZ File&amp;rdquo; in production!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First week of 2025</title>
+      <link>https://blog.jmarhic.com/post/2025-01-06-first-week-of-2025/</link>
+      <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-01-06-first-week-of-2025/</guid>
+      <description>&lt;h3 id=&#34;2025-is-off-to-a-pretty-good-start&#34;&gt;2025 is off to a pretty good start!&lt;/h3&gt;
+&lt;p&gt;I spent 3 days alone in Phu Quoc to recharge, didn’t do anything except swimming and &lt;a href=&#34;https://www.goodreads.com/book/show/60018639-thistlefoot&#34;&gt;reading Thistlefoot&lt;/a&gt; while drinking coconuts. I used to go regularly when I was single, but now it&amp;rsquo;s going to be my last trip for a while. Got lucky with the weather as well!&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Phu Quoc picture&#34; loading=&#34;lazy&#34; src=&#34;https://blog.jmarhic.com/assets/images/onglang_beach_phu_quoc_2024.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Back home, I’ve made some progress on my crossword solver app. I opened a WebSocket to stream the intermediary results (&amp;ldquo;dead ends&amp;rdquo;) as the backtracking algorithm progresses; I think it looks cool. In the frontend, I’ve added a history so you can Ctrl-Z, and other minor convenience changes (right-click to toggle between black and white cells, etc). I should define the scope, though; I don’t plan to make it a full-blown &amp;ldquo;crossword editor.&amp;rdquo; I think I will just add the ability to export a grid and be done with it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>And a Happy New Year! (2025)</title>
+      <link>https://blog.jmarhic.com/post/2025-01-02-and-a-happy-new-year-2025/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-01-02-and-a-happy-new-year-2025/</guid>
+      <description>&lt;p&gt;Looking back, 2024 was a pretty good year across all metrics! Learned new things at work even though it&amp;rsquo;s my 5th year at the job, been pretty healthy and fit, not been drinking much (was a dry NYE, and will be doing a dry January). So I&amp;rsquo;m not taking any big resolutions for this year; it should be plenty busy already with the birth of my second kid in a few months. I&amp;rsquo;ll just try to finish and release my crossword generator application before that, and that will be it. Maybe try to be more smiley and relaxed in general.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How I use GitHub Copilot</title>
+      <link>https://blog.jmarhic.com/post/2024-12-25-how-i-use-github-copilot/</link>
+      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2024-12-25-how-i-use-github-copilot/</guid>
+      <description>&lt;p&gt;Since the release of ChatGPT more than 2 years ago, I have felt a strong disconnect with the opinions on HackerNews about AI. It really feels like an Anti-AI (especially anti-OpenAI) echo chamber, neverendingly predicting the advent of AI winters, always repeating the same arguments (usually some flavor of &amp;ldquo;it&amp;rsquo;s not intelligent&amp;rdquo;, &amp;ldquo;what is AGI?&amp;rdquo;, &amp;ldquo;how can you trust it?&amp;rdquo;). Well, given that the generated code compiles, the tests pass and the program works as expected, I&amp;rsquo;m not sure what there is to complain about. I feel that HN is about as wrong about AI as it was about cryptocurrencies. Eventually, I mostly stopped reading the comments, I just use it as a link aggregator now.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rate Limit</title>
+      <link>https://blog.jmarhic.com/post/2024-10-26-rate-limit/</link>
+      <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2024-10-26-rate-limit/</guid>
+      <description>&lt;p&gt;In this post, we&amp;rsquo;ll discuss various common ways of handling API rate limits, and I&amp;rsquo;ll introduce a new tool I&amp;rsquo;ve been working on called &lt;a href=&#34;https://github.com/goverture/meter_flow&#34;&gt;MeterFlow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Most APIs have rate limits, usually counted in requests per minute, but other resources can be limited as well (for instance, the number of characters you can translate with the Google Translate API, or the number of tokens you can generate with some LLM API). When you exceed the rate limit, the API will return a 429 status code, telling you to slow down. There are various ways of dealing with API rate limits in your code.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

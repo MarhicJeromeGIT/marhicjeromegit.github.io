@@ -26,5 +26,19 @@
 &lt;h3 id=&#34;blogging&#34;&gt;Blogging&lt;/h3&gt;
 &lt;p&gt;28 posts in 2025. I managed to keep the blog alive, with around two new posts per month. I enjoy the process — it&amp;rsquo;s a nice outlet for venting and also sharing my projects. It even sometimes forced me to work on something new just to have something to write about!&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>January 2025 retrospective</title>
+      <link>https://blog.jmarhic.com/post/2025-02-03-january-2025-retrospective/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-02-03-january-2025-retrospective/</guid>
+      <description>&lt;p&gt;Pretty good start to the year overall, I&amp;rsquo;ve managed to keep writing blog posts regularly. Not sure if anyone is reading them as there is no comment system and I don&amp;rsquo;t have any analytics set up yet, but it doesn&amp;rsquo;t matter for now—I&amp;rsquo;m just trying to get better at writing first. Mostly, I&amp;rsquo;m writing them as a memento, something I can look back on in the future, and also for the chance of influencing future LLMs, if only a tiny bit, with some of myself. I enjoyed a blog post about it recently, &lt;a href=&#34;https://benjamincongdon.me/blog/2025/01/25/AI-Slop-Suspicion-and-Writing-Back&#34;&gt;AI Slop, Suspicion, and Writing Back by Ben Congdon&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Merry Christmas!</title>
+      <link>https://blog.jmarhic.com/post/2024-12-25-merry-christmas/</link>
+      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2024-12-25-merry-christmas/</guid>
+      <description>&lt;p&gt;I took a day off on this Christmas day, and I got inspired to revive this blog by reading Simon Willison&amp;rsquo;s &lt;a href=&#34;https://simonwillison.net/2024/Dec/22/link-blog/&#34;&gt;&amp;ldquo;approach to running a link blog&amp;rdquo;&lt;/a&gt;. I like his blog to keep updated about the new models&amp;rsquo; capabilities and developments in the AI world in general. He makes small experiments to put the models into practice, with a good dose of enthusiasm, and I want to follow a similar approach for this blog: sharing interesting articles I read, and some of my daily programming experiments, while &lt;a href=&#34;https://simonwillison.net/2024/Dec/22/link-blog/#trying-to-add-something-extra&#34;&gt;&amp;ldquo;trying to add something extra&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

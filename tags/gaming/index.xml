@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gaming on Daily Scream</title>
+    <link>https://blog.jmarhic.com/tags/gaming/</link>
+    <description>Recent content in Gaming on Daily Scream</description>
+    <image>
+      <title>Daily Scream</title>
+      <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
+      <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
+    </image>
+    <generator>Hugo -- 0.167.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Nov 2025 00:03:02 +0900</lastBuildDate>
+    <atom:link href="https://blog.jmarhic.com/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 11 24 Monday morning</title>
+      <link>https://blog.jmarhic.com/post/2025-11-24-monday-morning/</link>
+      <pubDate>Mon, 24 Nov 2025 00:03:02 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-11-24-monday-morning/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Vietnam has been hit hard by heavy rain lately, but the skies were clear this morning. I drove my daughter to school on a scooter, and since we were early we took a longer route across the river. From the bridge we saw a giant rubber duck they installed on the other side of the river, pretty cool ! Arrived at school she asked me to stay for the morning dance, so I watched her jumping to the sound of &lt;a href=&#34;https://www.youtube.com/watch?v=V6fGupFWQ7o&#34;&gt;DJ Raphi&amp;rsquo;s ABC song&lt;/a&gt; with 50 other kindergartners. That was an energetic morning ! Just what I needed so I could resume work on this sprint ticket.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2025 11 05 November Update</title>
+      <link>https://blog.jmarhic.com/post/2025-11-05-november-update/</link>
+      <pubDate>Wed, 05 Nov 2025 23:16:40 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-11-05-november-update/</guid>
+      <description>&lt;p&gt;A lot going on these days!&lt;/p&gt;
+&lt;p&gt;I succumbed to the hype and installed &lt;a href=&#34;https://omarchy.org/&#34;&gt;Omarchy&lt;/a&gt;, the new Linux distro by DHH. It&amp;rsquo;s basically Arch Linux with a tiling window manager (&lt;a href=&#34;https://hypr.land/&#34;&gt;Hyprland&lt;/a&gt;), but it comes pre-configured and installable with an ISO, which is super convenient compared to the usual Arch install process. So out of the box you get a very good-looking desktop with nice shortcuts and documentation.&lt;/p&gt;
+&lt;p&gt;Some will disagree with DHH&amp;rsquo;s preferences and choices, but realistically I would never have taken the time to configure Hyprland properly myself, so it&amp;rsquo;s nice to be able to rely on somebody&amp;rsquo;s taste (I trust DHH&amp;rsquo;s taste more than mine in that regard!). Same goes for the rest of the desktop environment (waybar for the top bar, walker for the app launcher&amp;hellip;). That was my main issue with Arch, too much choice and alternatives that I don&amp;rsquo;t really care about (I just want internet, not to have to choose a network manager&amp;hellip;). So I really see the appeal of Omarchy for many people, and it seems to be gaining popularity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rip Daniel Narodistky</title>
+      <link>https://blog.jmarhic.com/post/2025-10-24-rip-daniel-narodistky/</link>
+      <pubDate>Fri, 24 Oct 2025 13:01:21 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-10-24-rip-daniel-narodistky/</guid>
+      <description>&lt;p&gt;Sadly, this week saw the passing of Chess Grandmaster and streamer &lt;a href=&#34;https://www.youtube.com/@DanielNaroditskyGM&#34;&gt;Daniel Narodistky&lt;/a&gt; and it came as a shock for a lot of people including me. I was particularly a fan of his &amp;ldquo;speedrun&amp;rdquo; videos, it really helped demystify chess. I used to think high level chess was this impenetrable mix of &amp;ldquo;opening&amp;rdquo; knowledge and thinking 20 moves in advance, but he really showed how each move made sense in an almost obvious way, either positionally or tactically. Watching his videos you get the feeling that you grasp chess and that, of course you could have won that game too, that was easy ! (only to lose against a 1000 ELO in your next game).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
