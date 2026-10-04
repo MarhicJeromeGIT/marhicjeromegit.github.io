@@ -9,7 +9,7 @@
       <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
       <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
     </image>
-    <generator>Hugo -- 0.151.0</generator>
+    <generator>Hugo -- 0.167.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jul 2026 00:18:41 +0900</lastBuildDate>
     <atom:link href="https://blog.jmarhic.com/post/index.xml" rel="self" type="application/rss+xml" />
@@ -111,7 +111,8 @@
 &lt;p&gt;A programmer says &amp;ldquo;I have 2 kids, and the sum of their age is 4&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The logician thinks and says &amp;ldquo;not enough info&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The programmer adds &amp;ldquo;The eldest likes Bluey&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Alright, I&amp;rsquo;ve been working on a new project, &lt;a href=&#34;https://github.com/goverture/goxy&#34;&gt;Goxy&lt;/a&gt;: an OpenAI proxy that track &amp;amp; limit spending. You can set an hourly limit (say 1$ per hour) and the proxy will return 429 errors when the spend reaches the limit. That lets you release LLM using projects while being confident you won&amp;rsquo;t get hit with a thousand-dollar bill at the end of the month.&lt;/p&gt;</description>
     </item>
     <item>
@@ -264,7 +265,12 @@ Agentic coding/research is all the rage today and I got the idea of making an &a
 &lt;blockquote&gt;
 &lt;p&gt;Hi Jerome,&lt;/p&gt;
 &lt;p&gt;We wanted to let you know about an upcoming software update for your Pixel 4a that will affect the overall performance and stability of its battery. Pixel phones, like other smartphones, use rechargeable lithium-ion batteries that, over time, may experience performance, capacity, or runtime degradation.&lt;/p&gt;
-&lt;p&gt;In the coming days, your Pixel 4a will receive an automatic software update to Android 13 that introduces new battery management features to improve the stability of the battery. This update will reduce your battery’s runtime and charging performance.&lt;/p&gt;</description>
+&lt;p&gt;In the coming days, your Pixel 4a will receive an automatic software update to Android 13 that introduces new battery management features to improve the stability of the battery. This update will reduce your battery’s runtime and charging performance.&lt;/p&gt;
+&lt;p&gt;To address this, we’re providing some options to consider. Please take a look and choose which one works best for you.&lt;/p&gt;
+&lt;p&gt;More details related to this change are available here. Eligibility criteria and other terms will apply.&lt;/p&gt;
+&lt;p&gt;Thank you,&lt;br&gt;
+Pixel team&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>January 2025, Second Week Update</title>

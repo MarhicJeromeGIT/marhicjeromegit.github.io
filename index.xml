@@ -9,7 +9,7 @@
       <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
       <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
     </image>
-    <generator>Hugo -- 0.151.0</generator>
+    <generator>Hugo -- 0.167.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jul 2026 00:18:41 +0900</lastBuildDate>
     <atom:link href="https://blog.jmarhic.com/index.xml" rel="self" type="application/rss+xml" />
@@ -111,7 +111,8 @@
 &lt;p&gt;A programmer says &amp;ldquo;I have 2 kids, and the sum of their age is 4&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The logician thinks and says &amp;ldquo;not enough info&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The programmer adds &amp;ldquo;The eldest likes Bluey&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Alright, I&amp;rsquo;ve been working on a new project, &lt;a href=&#34;https://github.com/goverture/goxy&#34;&gt;Goxy&lt;/a&gt;: an OpenAI proxy that track &amp;amp; limit spending. You can set an hourly limit (say 1$ per hour) and the proxy will return 429 errors when the spend reaches the limit. That lets you release LLM using projects while being confident you won&amp;rsquo;t get hit with a thousand-dollar bill at the end of the month.&lt;/p&gt;</description>
     </item>
     <item>
@@ -158,6 +159,16 @@
       <pubDate>Fri, 25 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://blog.jmarhic.com/post/2025-07-25-i-apologize-for-the-confusion-you-re-absolutely-right/</guid>
       <description>&lt;p&gt;Google did me dirty this week and I&amp;rsquo;m salty, so let me tell you. The other day I received an email informing me that my YouTube Premium subscription had been renewed, which surprised me because I canceled it about 6 months ago, and I haven&amp;rsquo;t missed it ever since (thanks, &lt;a href=&#34;https://github.com/yt-dlp/yt-dlp&#34;&gt;yt-dlp&lt;/a&gt;!). I first thought it was my daughter&amp;rsquo;s shenanigans, but after a closer look I had only &amp;ldquo;paused&amp;rdquo; the subscription instead of canceling it, and Google conveniently failed to inform me it was going to be restarted&amp;hellip; No advance email like &amp;ldquo;your subscription will restart in a few days,&amp;rdquo; just &amp;ldquo;whoops, we restarted your subscription and you&amp;rsquo;ve been charged 13 euros, teehee.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://blog.jmarhic.com/about/</link>
+      <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/about/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m Jerome Marhic — a backend developer based in Ho Chi Minh City, Vietnam.&lt;/p&gt;
+&lt;p&gt;This is &lt;em&gt;Daily Scream&lt;/em&gt;, my blog where I write about development, projects, and whatever I&amp;rsquo;m tinkering with. I started it as a memento — something I can look back on — and also for the chance of mildly influencing the weights of the shoggoth by putting more of my own thoughts out there.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-work-with&#34;&gt;What I work with&lt;/h2&gt;
+&lt;p&gt;My bread and butter is &lt;strong&gt;Go&lt;/strong&gt;, but I&amp;rsquo;ve spent a lot of time with &lt;strong&gt;Ruby&lt;/strong&gt; and &lt;strong&gt;TypeScript&lt;/strong&gt; as well. I&amp;rsquo;m interested in backend systems, APIs, and infrastructure — the kind of work where you think about rate limits, scheduling, and making things reliable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>July Update</title>
@@ -264,7 +275,12 @@ Agentic coding/research is all the rage today and I got the idea of making an &a
 &lt;blockquote&gt;
 &lt;p&gt;Hi Jerome,&lt;/p&gt;
 &lt;p&gt;We wanted to let you know about an upcoming software update for your Pixel 4a that will affect the overall performance and stability of its battery. Pixel phones, like other smartphones, use rechargeable lithium-ion batteries that, over time, may experience performance, capacity, or runtime degradation.&lt;/p&gt;
-&lt;p&gt;In the coming days, your Pixel 4a will receive an automatic software update to Android 13 that introduces new battery management features to improve the stability of the battery. This update will reduce your battery’s runtime and charging performance.&lt;/p&gt;</description>
+&lt;p&gt;In the coming days, your Pixel 4a will receive an automatic software update to Android 13 that introduces new battery management features to improve the stability of the battery. This update will reduce your battery’s runtime and charging performance.&lt;/p&gt;
+&lt;p&gt;To address this, we’re providing some options to consider. Please take a look and choose which one works best for you.&lt;/p&gt;
+&lt;p&gt;More details related to this change are available here. Eligibility criteria and other terms will apply.&lt;/p&gt;
+&lt;p&gt;Thank you,&lt;br&gt;
+Pixel team&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>January 2025, Second Week Update</title>
