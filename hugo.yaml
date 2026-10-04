@@ -1,6 +1,6 @@
 baseURL: "https://blog.jmarhic.com"
 title: "Daily Scream"
-languageCode: "en-us"
+locale: "en-us"
 defaultContentLanguage: "en"
 disablePathToLower: true
 
@@ -166,6 +166,10 @@ menu:
       name: Home
       url: /
       weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 15
     - identifier: posts
       name: Posts
       url: /post/
