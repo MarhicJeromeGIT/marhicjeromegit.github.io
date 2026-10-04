@@ -2,6 +2,7 @@
 title: "2025 11 05 November Update"
 date: 2025-11-05T23:16:40+09:00
 draft: false
+tags: ["projects", "personal", "gaming", "go"]
 ---
 
 A lot going on these days!

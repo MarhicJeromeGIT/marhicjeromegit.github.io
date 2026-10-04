@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-01-27T00:00:00Z"
 title: Happy Lunar New Year
+tags: ["personal", "ai", "self-hosting"]
 ---
 
 This week it's Lunar New Year, or Têt celebrations in Vietnam. Which means my daughter's school is off, which means I get approximately 30 seconds of free time per day. Despite that, it was hard to miss the hype regarding the release of Deepseek R1. I didn't have time to read the paper or anything, but I gave it a quick try at [chat.deepseek.com](chat.deepseek.com). I still don't have a good handle on what is a good "reasoning question," but I came up with a good use case today: coming up with a memorable port number for a service I'm hosting locally.

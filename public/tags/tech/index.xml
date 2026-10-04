@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tech on Daily Scream</title>
+    <link>https://blog.jmarhic.com/tags/tech/</link>
+    <description>Recent content in Tech on Daily Scream</description>
+    <image>
+      <title>Daily Scream</title>
+      <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
+      <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
+    </image>
+    <generator>Hugo -- 0.167.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 May 2026 23:17:20 +0900</lastBuildDate>
+    <atom:link href="https://blog.jmarhic.com/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>May 2026 Update - OpenCode and CTF</title>
+      <link>https://blog.jmarhic.com/post/2026-05-20-may-update/</link>
+      <pubDate>Wed, 20 May 2026 23:17:20 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-05-20-may-update/</guid>
+      <description>&lt;p&gt;A few days ago, there was a trending post on HN called &amp;ldquo;The CTF scene is dead.&amp;rdquo; (&lt;a href=&#34;https://kabir.au/blog/the-ctf-scene-is-dead&#34;&gt;link&lt;/a&gt;), in which the author laments that CTF (capture the flag, &amp;ldquo;hacking&amp;rdquo; competitions) are dead due to being mostly solvable by AI, which actually made me want to try it!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve actually never done any CTF, so after some research, I ended up doing the first 15 levels of the OverTheWire &lt;a href=&#34;https://overthewire.org/wargames/bandit/bandit0.html&#34;&gt;Bandit&lt;/a&gt; game. Frankly it wasn&amp;rsquo;t super interesting (mostly running find commands with the right flags&amp;hellip;) due to it being aimed at absolute beginners.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>January Update</title>
+      <link>https://blog.jmarhic.com/post/2026-01-26-january-update/</link>
+      <pubDate>Mon, 26 Jan 2026 23:23:07 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-01-26-january-update/</guid>
+      <description>&lt;p&gt;Almost the end of January and no blog post yet !&lt;/p&gt;
+&lt;p&gt;Time to remedy that. One reason for the silence is I don&amp;rsquo;t have much going on, in the past 6 months or so Claude Code and other coding agents have made such progress that pretty much anyone at my company (former QA, designers etc) is able to contribute new features to our product. It was foreseable and gradual for the past 2 years so it&amp;rsquo;s not a huge shock, though it came faster than I expected, and last year (2025) caused a big questioning about my career as a software engineer. What value can I add when anyone with minimal experience can contribute to the codebase ? The situation is not so dire yet, I do have some answers at the present (like I&amp;rsquo;m good at debugging, experience with the whole stack, etc) but nothing that feels particularly future proof. Take debugging, it takes 30 seconds of searching to find a &amp;ldquo;vscode debugger mcp&amp;rdquo; that lets agent use VSCode integrated debugging (not that I would trust it enough to install it, but we&amp;rsquo;re bound to have an official one someday). We&amp;rsquo;re already at the point where a multiple agent setup can create an app, launch it, interact with it in a browser, and debug the backend, without human assistance. Am I a better debugger than a swarm of Claude-5.2-banana agents running in the background ? I don&amp;rsquo;t believe so.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>August 2025 Update (GPT-5, Veo 3, Gemini CLI, Open Source)</title>
+      <link>https://blog.jmarhic.com/post/2025-08-08-august-2025-update/</link>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-08-08-august-2025-update/</guid>
+      <description>&lt;p&gt;Lot of things going on this summer, but yesterday&amp;rsquo;s big news was the release of ChatGPT 5. I don&amp;rsquo;t have an opinion on it yet, but I guess it&amp;rsquo;s nice to have a single model (at least exposed, even if this is routed under the hood) instead of switching between 4o and o4-mini-high, etc.&lt;/p&gt;
+&lt;p&gt;Recently I&amp;rsquo;ve been on the market for a &amp;ldquo;CLI Agent&amp;rdquo; (synchronous, like Claude Code, not async like Devin and co.). I&amp;rsquo;ve been using &lt;a href=&#34;https://github.com/google-gemini/gemini-cli&#34;&gt;Gemini CLI&lt;/a&gt; with good results — as long as I&amp;rsquo;m within the free PRO requests. As soon as it switches to the &amp;ldquo;flash&amp;rdquo; model it becomes useless, can&amp;rsquo;t edit a file properly, and just loops on itself. I wouldn&amp;rsquo;t pay for it. Claude Code seems too expensive; I might give &lt;a href=&#34;https://github.com/openai/codex&#34;&gt;OpenAI Codex&lt;/a&gt; a try with GPT-5, but I haven&amp;rsquo;t heard much about it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>April update</title>
+      <link>https://blog.jmarhic.com/post/2025-04-12-april-update/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-04-12-april-update/</guid>
+      <description>&lt;p&gt;Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven&amp;rsquo;t been doing much in the past 3 weeks. Since I stopped working on it, I&amp;rsquo;ve released my thematic crossword generation app, &lt;a href=&#34;https://prosettr.com&#34;&gt;Prosettr&lt;/a&gt;, to a complete (and expected) indifference (zero traffic came from the &lt;a href=&#34;https://news.ycombinator.com/item?id=43521279&#34;&gt;HackerNews announcement&lt;/a&gt;, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I&amp;rsquo;m quite happy with the result!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First steps with CDK</title>
+      <link>https://blog.jmarhic.com/post/2025-03-09-trying-cdk-and-k6/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-03-09-trying-cdk-and-k6/</guid>
+      <description>&lt;p&gt;Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about &lt;a href=&#34;https://docs.aws.amazon.com/cdk/v2/guide/home.html&#34;&gt;AWS CDK&lt;/a&gt;. As a learning step, I&amp;rsquo;ve made a small template to deploy a static website on S3 + CloudFront for the frontend and ALB + ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it&amp;rsquo;s a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it&amp;rsquo;s really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rate Limit</title>
+      <link>https://blog.jmarhic.com/post/2024-10-26-rate-limit/</link>
+      <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2024-10-26-rate-limit/</guid>
+      <description>&lt;p&gt;In this post, we&amp;rsquo;ll discuss various common ways of handling API rate limits, and I&amp;rsquo;ll introduce a new tool I&amp;rsquo;ve been working on called &lt;a href=&#34;https://github.com/goverture/meter_flow&#34;&gt;MeterFlow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Most APIs have rate limits, usually counted in requests per minute, but other resources can be limited as well (for instance, the number of characters you can translate with the Google Translate API, or the number of tokens you can generate with some LLM API). When you exceed the rate limit, the API will return a 429 status code, telling you to slow down. There are various ways of dealing with API rate limits in your code.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

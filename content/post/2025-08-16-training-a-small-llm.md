@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-08-16T00:00:00Z"
 title: Training a small LLM
+tags: ["projects", "ai"]
 ---
 
 So in my [last post about Pilish]({% post_url 2025-08-09-pillmish %}) I mentioned that a follow up to get better results would be to use a LLM with word level tokenization. It's actually a bad idea in general because the vocabulary size can be huge, and that's why most LLM these days use BPE or subword tokenization, but I decided to give it a quick try and train a LLM from scratch with word level tokenization. Back in 2023 I used to be quite into finetuning and all that but this year I haven't done much low level tinkering with LLM so it was a good exercise.

@@ -2,6 +2,7 @@
 title: "September Update"
 date: 2025-09-25T16:28:00+07:00
 draft: false
+tags: ["projects", "personal", "hugo"]
 ---
 
 I just came back from a two weeks vacation in France with my daughter, and without my laptop, which was pretty nice. As a result I don't have much to say for this month !

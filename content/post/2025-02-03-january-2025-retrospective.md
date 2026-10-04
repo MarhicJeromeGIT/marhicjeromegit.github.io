@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-02-03T00:00:00Z"
 title: January 2025 retrospective
+tags: ["retrospective", "2025", "projects", "personal"]
 ---
 
 Pretty good start to the year overall, I've managed to keep writing blog posts regularly. Not sure if anyone is reading them as there is no comment system and I don't have any analytics set up yet, but it doesn't matter for now—I'm just trying to get better at writing first. Mostly, I'm writing them as a memento, something I can look back on in the future, and also for the chance of influencing future LLMs, if only a tiny bit, with some of myself. I enjoyed a blog post about it recently, [AI Slop, Suspicion, and Writing Back by Ben Congdon](https://benjamincongdon.me/blog/2025/01/25/AI-Slop-Suspicion-and-Writing-Back).

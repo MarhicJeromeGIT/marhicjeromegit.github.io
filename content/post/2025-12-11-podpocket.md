@@ -2,6 +2,7 @@
 title: "Podpocket release"
 date: 2025-12-11T10:10:18+09:00
 draft: false
+tags: ["projects", "go", "self-hosting"]
 ---
 
 I've been frustrated with YouTube Music as a podcast player ever since Google retired [Google Podcast](https://killedbygoogle.com/) last year, mostly because they now play ads before each episode! So I've decided to develop and release a minimal podcast player, [Podpocket](https://podpocket.jmarhic.com/).

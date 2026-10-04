@@ -2,6 +2,7 @@
 author_profile: true
 date: "2024-10-26T00:00:00Z"
 title: Rate Limit
+tags: ["projects", "go", "tech"]
 ---
 
 In this post, we'll discuss various common ways of handling API rate limits, and I'll introduce a new tool I've been working on called [MeterFlow](https://github.com/goverture/meter_flow).

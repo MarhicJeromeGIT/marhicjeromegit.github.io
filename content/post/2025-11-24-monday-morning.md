@@ -3,6 +3,7 @@
 title: "2025 11 24 Monday morning"
 date: 2025-11-24T00:03:02+09:00
 draft: false
+tags: ["projects", "personal", "gaming", "go"]
 -----------
 
 Vietnam has been hit hard by heavy rain lately, but the skies were clear this morning. I drove my daughter to school on a scooter, and since we were early we took a longer route across the river. From the bridge we saw a giant rubber duck they installed on the other side of the river, pretty cool ! Arrived at school she asked me to stay for the morning dance, so I watched her jumping to the sound of [DJ Raphi's ABC song](https://www.youtube.com/watch?v=V6fGupFWQ7o) with 50 other kindergartners. That was an energetic morning ! Just what I needed so I could resume work on this sprint ticket.

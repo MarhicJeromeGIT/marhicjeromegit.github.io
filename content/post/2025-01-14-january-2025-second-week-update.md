@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-01-14T00:00:00Z"
 title: January 2025, Second Week Update
+tags: ["projects", "go"]
 ---
 
 Already two weeks into January, it's time for an update on my projects! I'm really happy with the progress on [Prosettr.com](https://prosettr.com), my crossword generation app. It will soon be time to share it with the world (HackerNews...). Yesterday evening, I added login functionality (a choice of email + password or Google sign-in) using Firebase Authentication, as well as a button to load PUZ files.

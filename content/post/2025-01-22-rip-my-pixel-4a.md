@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-01-22T00:00:00Z"
 title: RIP my Pixel 4a
+tags: ["personal", "privacy", "self-hosting"]
 ---
 
 On the 7th of January, I received this surprising email from Google:

@@ -2,6 +2,7 @@
 title: "July 2026 Update - I became a reader"
 date: 2026-07-12T00:18:41+09:00
 draft: false
+tags: ["projects", "personal", "privacy"]
 ---
 
 My Japanese residence card expired in June, and with my company we decided not to renew it, instead I became a Vietnam-based foreign contractor. Not much change in practice, but I am not allowed to work in Japan anymore, which means I will visit less in the future. As I don't want to forget my hard-learned Japanese, I decided to try and read more Japanese books. But I lack the time to commit to proper novels so ChatGPT recommended [Shōsetsuka ni Narō](https://syosetu.com) (lit. "let's become an author"), a website where amateur writers post their web novels. Long story short, I made [Dokusha ni natta](https://natta.fly.dev/) (lit. "I became a reader"), a simple app that exports an ebook (epub or azw3 format) from a given novel code.

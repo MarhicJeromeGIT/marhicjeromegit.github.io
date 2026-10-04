@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-02-28T00:00:00Z"
 title: February update
+tags: ["projects", "ai", "personal", "go"]
 ---
 
 February went by in a blink! I barely had any time for myself this month between work, a pregnant wife, and my 2-year-old being in the "I want papa only" phase. These days, the first thing I do in the morning is play Lego. It beats doomscrolling, but at 7 a.m. and before my coffee, it's tough to be creative. Here's an elephant I made this morning—the trunk moves.

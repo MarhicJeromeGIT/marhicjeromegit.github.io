@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-06-18T00:00:00Z"
 title: The password game agent
+tags: ["projects", "ai"]
 ---
 
 There is this javascript game called [The Password Game](https://neal.fun/password-game/) where you have to chose a password, following increasingly ludicrous requirements.

@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-07-05T00:00:00Z"
 title: July Update
+tags: ["projects", "ai"]
 ---
 
 Just a quick update to say I am still making progress on the Password Game Agent project I mentioned last post. I have now reached up to step 16 where we need to solve a chess position... Seems like a suitable job for a reasoning model !

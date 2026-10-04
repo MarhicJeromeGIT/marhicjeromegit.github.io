@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-07-25T00:00:00Z"
 title: I apologize for the confusion. You're absolutely right.
+tags: ["personal", "privacy"]
 ---
 
 Google did me dirty this week and I'm salty, so let me tell you. The other day I received an email informing me that my YouTube Premium subscription had been renewed, which surprised me because I canceled it about 6 months ago, and I haven't missed it ever since (thanks, [yt-dlp](https://github.com/yt-dlp/yt-dlp)!). I first thought it was my daughter's shenanigans, but after a closer look I had only "paused" the subscription instead of canceling it, and Google conveniently failed to inform me it was going to be restarted... No advance email like "your subscription will restart in a few days," just "whoops, we restarted your subscription and you've been charged 13 euros, teehee."

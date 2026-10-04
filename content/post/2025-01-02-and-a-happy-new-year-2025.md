@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-01-02T00:00:00Z"
 title: And a Happy New Year! (2025)
+tags: ["personal", "projects", "go"]
 ---
 
 Looking back, 2024 was a pretty good year across all metrics! Learned new things at work even though it's my 5th year at the job, been pretty healthy and fit, not been drinking much (was a dry NYE, and will be doing a dry January). So I'm not taking any big resolutions for this year; it should be plenty busy already with the birth of my second kid in a few months. I'll just try to finish and release my crossword generator application before that, and that will be it. Maybe try to be more smiley and relaxed in general.

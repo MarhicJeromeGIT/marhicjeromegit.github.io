@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-05-04T00:00:00Z"
 title: My First MCP server
+tags: ["projects", "ai", "go"]
 ---
 
 So MCP is all the rage these days, and it's not very complex: it's basically a standardized way to provide tools to LLMs. So you have an RPC server that provides a description of the tools and the parameters they expect, and your client (a LLM based application) can connect to it and tell the LLM what tools are available, and the LLM can decide to call them when appropriate. Easy stuff and the [SDK provided](https://github.com/modelcontextprotocol/typescript-sdk) do most of the heavy lifting.

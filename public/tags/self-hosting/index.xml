@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Self-Hosting on Daily Scream</title>
+    <link>https://blog.jmarhic.com/tags/self-hosting/</link>
+    <description>Recent content in Self-Hosting on Daily Scream</description>
+    <image>
+      <title>Daily Scream</title>
+      <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
+      <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
+    </image>
+    <generator>Hugo -- 0.167.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Dec 2025 10:10:18 +0900</lastBuildDate>
+    <atom:link href="https://blog.jmarhic.com/tags/self-hosting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podpocket release</title>
+      <link>https://blog.jmarhic.com/post/2025-12-11-podpocket/</link>
+      <pubDate>Thu, 11 Dec 2025 10:10:18 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-12-11-podpocket/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been frustrated with YouTube Music as a podcast player ever since Google retired &lt;a href=&#34;https://killedbygoogle.com/&#34;&gt;Google Podcast&lt;/a&gt; last year, mostly because they now play ads before each episode! So I&amp;rsquo;ve decided to develop and release a minimal podcast player, &lt;a href=&#34;https://podpocket.jmarhic.com/&#34;&gt;Podpocket&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It was really a pleasure to develop it with &lt;a href=&#34;https://pocketbase.io/&#34;&gt;Pocketbase&lt;/a&gt;, as it handled everything I need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;authentication (including oauth) setup in a few clicks&lt;/li&gt;
+&lt;li&gt;a UI to create new collections (sqlite tables), and a complete admin dashboard&lt;/li&gt;
+&lt;li&gt;Even Cron jobs (to refresh the RSS feeds periodically)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And best of all, it&amp;rsquo;s written in Go so you can extend it super easily. For instance, I added an endpoint to register new RSS feeds, and I still have a single unified backend. This is unlike Firebase where you end up with a split architecture where some calls go directly to Firebase services and others to your custom backend. I&amp;rsquo;m definitely going to reuse it in my next project. A fun feature is the &lt;a href=&#34;https://pocketbase.io/docs/authentication/#users-impersonation&#34;&gt;user impersonation&lt;/a&gt; that lets an admin login as another user.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>May update</title>
+      <link>https://blog.jmarhic.com/post/2025-05-25-may-update/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-05-25-may-update/</guid>
+      <description>&lt;p&gt;Another May update ! Not much going on as usual, rainy season arrived in Ho Chi Minh city so we get some strong rain and nice sunsets.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Rainy season sunset&#34; loading=&#34;lazy&#34; src=&#34;https://blog.jmarhic.com/assets/images/sunset.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Yesterday we got the announcement that &lt;a href=&#34;https://support.mozilla.org/en-US/kb/future-of-pocket&#34;&gt;Pocket was saying goodbye&lt;/a&gt;. Kind of bummed because I found the service convenient, though I just used it as a link bookmark (I never cared much about the reading mode, I always go to the original link - though apparently that worked well with the Kobo e-reader). Anyway I switched to a self-hosted alternative immediately: &lt;a href=&#34;https://wallabag.org/&#34;&gt;Wallabag&lt;/a&gt;. It&amp;rsquo;s kind of sluggish but it does the job, and it has an Android app so I can still &amp;ldquo;share link&amp;rdquo; to save a link from my phone.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Happy Lunar New Year</title>
+      <link>https://blog.jmarhic.com/post/2025-01-27-happy-lunar-new-year/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-01-27-happy-lunar-new-year/</guid>
+      <description>&lt;p&gt;This week it&amp;rsquo;s Lunar New Year, or Têt celebrations in Vietnam. Which means my daughter&amp;rsquo;s school is off, which means I get approximately 30 seconds of free time per day. Despite that, it was hard to miss the hype regarding the release of Deepseek R1. I didn&amp;rsquo;t have time to read the paper or anything, but I gave it a quick try at &lt;a href=&#34;chat.deepseek.com&#34;&gt;chat.deepseek.com&lt;/a&gt;. I still don&amp;rsquo;t have a good handle on what is a good &amp;ldquo;reasoning question,&amp;rdquo; but I came up with a good use case today: coming up with a memorable port number for a service I&amp;rsquo;m hosting locally.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RIP my Pixel 4a</title>
+      <link>https://blog.jmarhic.com/post/2025-01-22-rip-my-pixel-4a/</link>
+      <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-01-22-rip-my-pixel-4a/</guid>
+      <description>&lt;p&gt;On the 7th of January, I received this surprising email from Google:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hi Jerome,&lt;/p&gt;
+&lt;p&gt;We wanted to let you know about an upcoming software update for your Pixel 4a that will affect the overall performance and stability of its battery. Pixel phones, like other smartphones, use rechargeable lithium-ion batteries that, over time, may experience performance, capacity, or runtime degradation.&lt;/p&gt;
+&lt;p&gt;In the coming days, your Pixel 4a will receive an automatic software update to Android 13 that introduces new battery management features to improve the stability of the battery. This update will reduce your battery’s runtime and charging performance.&lt;/p&gt;
+&lt;p&gt;To address this, we’re providing some options to consider. Please take a look and choose which one works best for you.&lt;/p&gt;
+&lt;p&gt;More details related to this change are available here. Eligibility criteria and other terms will apply.&lt;/p&gt;
+&lt;p&gt;Thank you,&lt;br&gt;
+Pixel team&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>

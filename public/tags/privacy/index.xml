@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Privacy on Daily Scream</title>
+    <link>https://blog.jmarhic.com/tags/privacy/</link>
+    <description>Recent content in Privacy on Daily Scream</description>
+    <image>
+      <title>Daily Scream</title>
+      <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
+      <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
+    </image>
+    <generator>Hugo -- 0.167.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jul 2026 00:18:41 +0900</lastBuildDate>
+    <atom:link href="https://blog.jmarhic.com/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>July 2026 Update - I became a reader</title>
+      <link>https://blog.jmarhic.com/post/2026-07-11-July-update/</link>
+      <pubDate>Sun, 12 Jul 2026 00:18:41 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2026-07-11-July-update/</guid>
+      <description>&lt;p&gt;My Japanese residence card expired in June, and with my company we decided not to renew it, instead I became a Vietnam-based foreign contractor. Not much change in practice, but I am not allowed to work in Japan anymore, which means I will visit less in the future. As I don&amp;rsquo;t want to forget my hard-learned Japanese, I decided to try and read more Japanese books. But I lack the time to commit to proper novels so ChatGPT recommended &lt;a href=&#34;https://syosetu.com&#34;&gt;Shōsetsuka ni Narō&lt;/a&gt; (lit. &amp;ldquo;let&amp;rsquo;s become an author&amp;rdquo;), a website where amateur writers post their web novels. Long story short, I made &lt;a href=&#34;https://natta.fly.dev/&#34;&gt;Dokusha ni natta&lt;/a&gt; (lit. &amp;ldquo;I became a reader&amp;rdquo;), a simple app that exports an ebook (epub or azw3 format) from a given novel code.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I apologize for the confusion. You&#39;re absolutely right.</title>
+      <link>https://blog.jmarhic.com/post/2025-07-25-i-apologize-for-the-confusion-you-re-absolutely-right/</link>
+      <pubDate>Fri, 25 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-07-25-i-apologize-for-the-confusion-you-re-absolutely-right/</guid>
+      <description>&lt;p&gt;Google did me dirty this week and I&amp;rsquo;m salty, so let me tell you. The other day I received an email informing me that my YouTube Premium subscription had been renewed, which surprised me because I canceled it about 6 months ago, and I haven&amp;rsquo;t missed it ever since (thanks, &lt;a href=&#34;https://github.com/yt-dlp/yt-dlp&#34;&gt;yt-dlp&lt;/a&gt;!). I first thought it was my daughter&amp;rsquo;s shenanigans, but after a closer look I had only &amp;ldquo;paused&amp;rdquo; the subscription instead of canceling it, and Google conveniently failed to inform me it was going to be restarted&amp;hellip; No advance email like &amp;ldquo;your subscription will restart in a few days,&amp;rdquo; just &amp;ldquo;whoops, we restarted your subscription and you&amp;rsquo;ve been charged 13 euros, teehee.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fed up with Google ads</title>
+      <link>https://blog.jmarhic.com/post/2025-02-14-google-ads/</link>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-02-14-google-ads/</guid>
+      <description>&lt;p&gt;So I just got a Galaxy S 23 FE phone to replace my recently lost Realme crapphone. And&amp;hellip; frankly, it&amp;rsquo;s not much better. It came loaded with a LOT of bloat: Samsung apps (Galaxy Shop?), Microsoft apps (Copilot, Linkedin&amp;hellip;), Netflix, and a bunch of crapware like &amp;ldquo;AR Doodle&amp;rdquo;, &amp;ldquo;AR Emoji&amp;rdquo; that are somehow running in the background. Of course, I cannot uninstall any of those without rooting my phone, if it&amp;rsquo;s even possible.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RIP my Pixel 4a</title>
+      <link>https://blog.jmarhic.com/post/2025-01-22-rip-my-pixel-4a/</link>
+      <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-01-22-rip-my-pixel-4a/</guid>
+      <description>&lt;p&gt;On the 7th of January, I received this surprising email from Google:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hi Jerome,&lt;/p&gt;
+&lt;p&gt;We wanted to let you know about an upcoming software update for your Pixel 4a that will affect the overall performance and stability of its battery. Pixel phones, like other smartphones, use rechargeable lithium-ion batteries that, over time, may experience performance, capacity, or runtime degradation.&lt;/p&gt;
+&lt;p&gt;In the coming days, your Pixel 4a will receive an automatic software update to Android 13 that introduces new battery management features to improve the stability of the battery. This update will reduce your battery’s runtime and charging performance.&lt;/p&gt;
+&lt;p&gt;To address this, we’re providing some options to consider. Please take a look and choose which one works best for you.&lt;/p&gt;
+&lt;p&gt;More details related to this change are available here. Eligibility criteria and other terms will apply.&lt;/p&gt;
+&lt;p&gt;Thank you,&lt;br&gt;
+Pixel team&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>

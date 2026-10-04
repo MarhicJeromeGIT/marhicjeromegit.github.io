@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-03-23T00:00:00Z"
 title: Welcome to Liam
+tags: ["personal", "ai"]
 ---
 
 My son Liam was born this Monday! He is healthy and everything is good. I haven't touched the computer for the week, and as a result I don't have anything technical to share.

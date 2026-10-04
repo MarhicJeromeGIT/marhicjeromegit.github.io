@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-02-02T00:00:00Z"
 title: OpenAI o3-mini first impressions
+tags: ["ai"]
 ---
 
 Two days ago, OpenAI released their latest model, [OpenAI o3-mini](https://openai.com/index/openai-o3-mini/), a follow-up to the reasoning models o1 and o1-mini. They were immediately available on chatgpt.com, so I had a chance to put them to work. I had a simple task in mind (writing a Python script that would prompt an LLM to rate a list of words for use in my crossword app, [prosettr.com](https://prosettr.com)). The first output was good, but when I asked for a few minor tweaks I was presented with a refusal:

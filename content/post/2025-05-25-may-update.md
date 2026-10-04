@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-05-25T00:00:00Z"
 title: May update
+tags: ["self-hosting", "ai", "personal"]
 ---
 
 Another May update ! Not much going on as usual, rainy season arrived in Ho Chi Minh city so we get some strong rain and nice sunsets.

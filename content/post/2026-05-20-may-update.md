@@ -2,6 +2,7 @@
 title: "May 2026 Update - OpenCode and CTF"
 date: 2026-05-20T23:17:20+09:00
 draft: false
+tags: ["projects", "ai", "tech"]
 ---
 
 A few days ago, there was a trending post on HN called "The CTF scene is dead." ([link](https://kabir.au/blog/the-ctf-scene-is-dead)), in which the author laments that CTF (capture the flag, "hacking" competitions) are dead due to being mostly solvable by AI, which actually made me want to try it!

@@ -2,6 +2,7 @@
 title: "April 2026 - Happy Easter"
 date: 2026-04-05T12:45:58+09:00
 draft: false
+tags: ["personal", "projects", "ai"]
 ---
 
 I've been in a "space" period lately. Been reading [Project Hail Mary](https://www.goodreads.com/book/show/54493401-project-hail-mary) by Andy Weir and really enjoyed it, full of surprised and not a page felt like filler. Same as video games, most books bore me easily these days and feel like a waste of time, but this was 100% worse my time.

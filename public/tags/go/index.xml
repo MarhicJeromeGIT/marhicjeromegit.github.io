@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Go on Daily Scream</title>
+    <link>https://blog.jmarhic.com/tags/go/</link>
+    <description>Recent content in Go on Daily Scream</description>
+    <image>
+      <title>Daily Scream</title>
+      <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
+      <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
+    </image>
+    <generator>Hugo -- 0.167.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Dec 2025 10:10:18 +0900</lastBuildDate>
+    <atom:link href="https://blog.jmarhic.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podpocket release</title>
+      <link>https://blog.jmarhic.com/post/2025-12-11-podpocket/</link>
+      <pubDate>Thu, 11 Dec 2025 10:10:18 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-12-11-podpocket/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been frustrated with YouTube Music as a podcast player ever since Google retired &lt;a href=&#34;https://killedbygoogle.com/&#34;&gt;Google Podcast&lt;/a&gt; last year, mostly because they now play ads before each episode! So I&amp;rsquo;ve decided to develop and release a minimal podcast player, &lt;a href=&#34;https://podpocket.jmarhic.com/&#34;&gt;Podpocket&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It was really a pleasure to develop it with &lt;a href=&#34;https://pocketbase.io/&#34;&gt;Pocketbase&lt;/a&gt;, as it handled everything I need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;authentication (including oauth) setup in a few clicks&lt;/li&gt;
+&lt;li&gt;a UI to create new collections (sqlite tables), and a complete admin dashboard&lt;/li&gt;
+&lt;li&gt;Even Cron jobs (to refresh the RSS feeds periodically)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And best of all, it&amp;rsquo;s written in Go so you can extend it super easily. For instance, I added an endpoint to register new RSS feeds, and I still have a single unified backend. This is unlike Firebase where you end up with a split architecture where some calls go directly to Firebase services and others to your custom backend. I&amp;rsquo;m definitely going to reuse it in my next project. A fun feature is the &lt;a href=&#34;https://pocketbase.io/docs/authentication/#users-impersonation&#34;&gt;user impersonation&lt;/a&gt; that lets an admin login as another user.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2025 11 24 Monday morning</title>
+      <link>https://blog.jmarhic.com/post/2025-11-24-monday-morning/</link>
+      <pubDate>Mon, 24 Nov 2025 00:03:02 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-11-24-monday-morning/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Vietnam has been hit hard by heavy rain lately, but the skies were clear this morning. I drove my daughter to school on a scooter, and since we were early we took a longer route across the river. From the bridge we saw a giant rubber duck they installed on the other side of the river, pretty cool ! Arrived at school she asked me to stay for the morning dance, so I watched her jumping to the sound of &lt;a href=&#34;https://www.youtube.com/watch?v=V6fGupFWQ7o&#34;&gt;DJ Raphi&amp;rsquo;s ABC song&lt;/a&gt; with 50 other kindergartners. That was an energetic morning ! Just what I needed so I could resume work on this sprint ticket.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2025 11 05 November Update</title>
+      <link>https://blog.jmarhic.com/post/2025-11-05-november-update/</link>
+      <pubDate>Wed, 05 Nov 2025 23:16:40 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-11-05-november-update/</guid>
+      <description>&lt;p&gt;A lot going on these days!&lt;/p&gt;
+&lt;p&gt;I succumbed to the hype and installed &lt;a href=&#34;https://omarchy.org/&#34;&gt;Omarchy&lt;/a&gt;, the new Linux distro by DHH. It&amp;rsquo;s basically Arch Linux with a tiling window manager (&lt;a href=&#34;https://hypr.land/&#34;&gt;Hyprland&lt;/a&gt;), but it comes pre-configured and installable with an ISO, which is super convenient compared to the usual Arch install process. So out of the box you get a very good-looking desktop with nice shortcuts and documentation.&lt;/p&gt;
+&lt;p&gt;Some will disagree with DHH&amp;rsquo;s preferences and choices, but realistically I would never have taken the time to configure Hyprland properly myself, so it&amp;rsquo;s nice to be able to rely on somebody&amp;rsquo;s taste (I trust DHH&amp;rsquo;s taste more than mine in that regard!). Same goes for the rest of the desktop environment (waybar for the top bar, walker for the app launcher&amp;hellip;). That was my main issue with Arch, too much choice and alternatives that I don&amp;rsquo;t really care about (I just want internet, not to have to choose a network manager&amp;hellip;). So I really see the appeal of Omarchy for many people, and it seems to be gaining popularity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logic riddle (October update)</title>
+      <link>https://blog.jmarhic.com/post/2025-10-15-october-update/</link>
+      <pubDate>Wed, 15 Oct 2025 15:04:24 +0900</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-10-15-october-update/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;A programmer says &amp;ldquo;I have 2 kids, and the sum of their age is 4&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The logician thinks and says &amp;ldquo;not enough info&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The programmer adds &amp;ldquo;The eldest likes Bluey&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The logician smiles and replies &amp;ldquo;Ah ! You must be using vibe coding a lot&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Alright, I&amp;rsquo;ve been working on a new project, &lt;a href=&#34;https://github.com/goverture/goxy&#34;&gt;Goxy&lt;/a&gt;: an OpenAI proxy that track &amp;amp; limit spending. You can set an hourly limit (say 1$ per hour) and the proxy will return 429 errors when the spend reaches the limit. That lets you release LLM using projects while being confident you won&amp;rsquo;t get hit with a thousand-dollar bill at the end of the month.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First MCP server</title>
+      <link>https://blog.jmarhic.com/post/2025-05-04-my-first-mcp-server/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-05-04-my-first-mcp-server/</guid>
+      <description>&lt;p&gt;So MCP is all the rage these days, and it&amp;rsquo;s not very complex: it&amp;rsquo;s basically a standardized way to provide tools to LLMs. So you have an RPC server that provides a description of the tools and the parameters they expect, and your client (a LLM based application) can connect to it and tell the LLM what tools are available, and the LLM can decide to call them when appropriate. Easy stuff and the &lt;a href=&#34;https://github.com/modelcontextprotocol/typescript-sdk&#34;&gt;SDK provided&lt;/a&gt; do most of the heavy lifting.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>April update</title>
+      <link>https://blog.jmarhic.com/post/2025-04-12-april-update/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-04-12-april-update/</guid>
+      <description>&lt;p&gt;Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven&amp;rsquo;t been doing much in the past 3 weeks. Since I stopped working on it, I&amp;rsquo;ve released my thematic crossword generation app, &lt;a href=&#34;https://prosettr.com&#34;&gt;Prosettr&lt;/a&gt;, to a complete (and expected) indifference (zero traffic came from the &lt;a href=&#34;https://news.ycombinator.com/item?id=43521279&#34;&gt;HackerNews announcement&lt;/a&gt;, and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I&amp;rsquo;m quite happy with the result!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>February update</title>
+      <link>https://blog.jmarhic.com/post/2025-02-28-february-update/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-02-28-february-update/</guid>
+      <description>&lt;p&gt;February went by in a blink! I barely had any time for myself this month between work, a pregnant wife, and my 2-year-old being in the &amp;ldquo;I want papa only&amp;rdquo; phase. These days, the first thing I do in the morning is play Lego. It beats doomscrolling, but at 7 a.m. and before my coffee, it&amp;rsquo;s tough to be creative. Here&amp;rsquo;s an elephant I made this morning—the trunk moves.&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+    &lt;img src=&#34;https://blog.jmarhic.com/assets/images/lego_elephant.jpg&#34; alt=&#34;An elephant in Lego&#34; width=&#34;300&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt;I&amp;rsquo;ve also rewritten a big part of the backend of &lt;a href=&#34;https://prosettr.com&#34;&gt;Prosettr.com&lt;/a&gt;. In a HackerNews thread about Donald Knuth (&lt;a href=&#34;https://news.ycombinator.com/item?id=42970240&#34;&gt;Donald Knuth&amp;rsquo;s 2024 Christmas Lecture: Strong and Weak Components&lt;/a&gt;), I learned there was an improvement to the algorithm that my app is based on, Dancing Links. I&amp;rsquo;m not going to go into much detail here (maybe in a future post), but I procured &lt;em&gt;The Art of Computer Programming&lt;/em&gt; Volume 4B, and indeed, the improved version uses half the memory, with each option&amp;rsquo;s items having only up and down links, and no left and right links—those being replaced by a &amp;ldquo;spacer&amp;rdquo; node. Here&amp;rsquo;s my original implementation in Go I made while following the chapter: &lt;a href=&#34;https://github.com/goverture/exact_cover/blob/master/examples/backtrack_aocp/main.go&#34;&gt;/backtrack_aocp/main.go&lt;/a&gt;. Then I replaced the previous implementation with this one, with some added optimizations (support for secondary columns, using channels instead of an input matrix, another channel to output the solutions, etc.).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>January 2025, Second Week Update</title>
+      <link>https://blog.jmarhic.com/post/2025-01-14-january-2025-second-week-update/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-01-14-january-2025-second-week-update/</guid>
+      <description>&lt;p&gt;Already two weeks into January, it&amp;rsquo;s time for an update on my projects! I&amp;rsquo;m really happy with the progress on &lt;a href=&#34;https://prosettr.com&#34;&gt;Prosettr.com&lt;/a&gt;, my crossword generation app. It will soon be time to share it with the world (HackerNews&amp;hellip;). Yesterday evening, I added login functionality (a choice of email + password or Google sign-in) using Firebase Authentication, as well as a button to load PUZ files.&lt;/p&gt;
+&lt;p&gt;The latter was surprisingly easy to do: I gave ChatGPT o1-mini the &lt;a href=&#34;https://gist.github.com/sliminality/dab21fa834eae0a70193c7cd69c356d5&#34;&gt;PUZ format description&lt;/a&gt; and asked it for a loader/writer in Go with my expectations for the input/output, followed by an HTTP handler. Thirty minutes later, here we are with the &amp;ldquo;Upload PUZ File&amp;rdquo; in production!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>And a Happy New Year! (2025)</title>
+      <link>https://blog.jmarhic.com/post/2025-01-02-and-a-happy-new-year-2025/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-01-02-and-a-happy-new-year-2025/</guid>
+      <description>&lt;p&gt;Looking back, 2024 was a pretty good year across all metrics! Learned new things at work even though it&amp;rsquo;s my 5th year at the job, been pretty healthy and fit, not been drinking much (was a dry NYE, and will be doing a dry January). So I&amp;rsquo;m not taking any big resolutions for this year; it should be plenty busy already with the birth of my second kid in a few months. I&amp;rsquo;ll just try to finish and release my crossword generator application before that, and that will be it. Maybe try to be more smiley and relaxed in general.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How I use GitHub Copilot</title>
+      <link>https://blog.jmarhic.com/post/2024-12-25-how-i-use-github-copilot/</link>
+      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2024-12-25-how-i-use-github-copilot/</guid>
+      <description>&lt;p&gt;Since the release of ChatGPT more than 2 years ago, I have felt a strong disconnect with the opinions on HackerNews about AI. It really feels like an Anti-AI (especially anti-OpenAI) echo chamber, neverendingly predicting the advent of AI winters, always repeating the same arguments (usually some flavor of &amp;ldquo;it&amp;rsquo;s not intelligent&amp;rdquo;, &amp;ldquo;what is AGI?&amp;rdquo;, &amp;ldquo;how can you trust it?&amp;rdquo;). Well, given that the generated code compiles, the tests pass and the program works as expected, I&amp;rsquo;m not sure what there is to complain about. I feel that HN is about as wrong about AI as it was about cryptocurrencies. Eventually, I mostly stopped reading the comments, I just use it as a link aggregator now.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rate Limit</title>
+      <link>https://blog.jmarhic.com/post/2024-10-26-rate-limit/</link>
+      <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.jmarhic.com/post/2024-10-26-rate-limit/</guid>
+      <description>&lt;p&gt;In this post, we&amp;rsquo;ll discuss various common ways of handling API rate limits, and I&amp;rsquo;ll introduce a new tool I&amp;rsquo;ve been working on called &lt;a href=&#34;https://github.com/goverture/meter_flow&#34;&gt;MeterFlow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Most APIs have rate limits, usually counted in requests per minute, but other resources can be limited as well (for instance, the number of characters you can translate with the Google Translate API, or the number of tokens you can generate with some LLM API). When you exceed the rate limit, the API will return a 429 status code, telling you to slow down. There are various ways of dealing with API rate limits in your code.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

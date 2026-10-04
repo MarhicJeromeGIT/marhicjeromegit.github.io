@@ -2,6 +2,7 @@
 author_profile: true
 date: "2024-12-25T00:00:00Z"
 title: Merry Christmas!
+tags: ["personal", "retrospective"]
 ---
 
 I took a day off on this Christmas day, and I got inspired to revive this blog by reading Simon Willison's ["approach to running a link blog"](https://simonwillison.net/2024/Dec/22/link-blog/). I like his blog to keep updated about the new models' capabilities and developments in the AI world in general. He makes small experiments to put the models into practice, with a good dose of enthusiasm, and I want to follow a similar approach for this blog: sharing interesting articles I read, and some of my daily programming experiments, while ["trying to add something extra"](https://simonwillison.net/2024/Dec/22/link-blog/#trying-to-add-something-extra).

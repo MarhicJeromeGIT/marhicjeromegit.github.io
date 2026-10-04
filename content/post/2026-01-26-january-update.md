@@ -2,6 +2,7 @@
 title: "January Update"
 date: 2026-01-26T23:23:07+09:00
 draft: false
+tags: ["ai", "personal", "tech"]
 ---
 
 Almost the end of January and no blog post yet !

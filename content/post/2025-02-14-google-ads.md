@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-02-14T00:00:00Z"
 title: Fed up with Google ads
+tags: ["personal", "privacy"]
 ---
 
 So I just got a Galaxy S 23 FE phone to replace my recently lost Realme crapphone. And... frankly, it's not much better. It came loaded with a LOT of bloat: Samsung apps (Galaxy Shop?), Microsoft apps (Copilot, Linkedin...), Netflix, and a bunch of crapware like "AR Doodle", "AR Emoji" that are somehow running in the background. Of course, I cannot uninstall any of those without rooting my phone, if it's even possible.

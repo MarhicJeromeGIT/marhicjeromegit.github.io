@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-04-12T00:00:00Z"
 title: April update
+tags: ["projects", "tech", "go"]
 ---
 Unsurprisingly with a newborn and a very sticky 3 years old at home, I haven't been doing much in the past 3 weeks. Since I stopped working on it, I've released my thematic crossword generation app, [Prosettr](https://prosettr.com), to a complete (and expected) indifference (zero traffic came from the [HackerNews announcement](https://news.ycombinator.com/item?id=43521279), and I got about 10 likes from LinkedIn). Oh well, it was a fun project anyway and I'm quite happy with the result!
 

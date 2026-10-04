@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on Daily Scream</title>
+    <link>https://blog.jmarhic.com/tags/hugo/</link>
+    <description>Recent content in Hugo on Daily Scream</description>
+    <image>
+      <title>Daily Scream</title>
+      <url>https://avatars.githubusercontent.com/u/10737949?v=4</url>
+      <link>https://avatars.githubusercontent.com/u/10737949?v=4</link>
+    </image>
+    <generator>Hugo -- 0.167.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Sep 2025 16:28:00 +0700</lastBuildDate>
+    <atom:link href="https://blog.jmarhic.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>September Update</title>
+      <link>https://blog.jmarhic.com/post/2025-09-25-september-update/</link>
+      <pubDate>Thu, 25 Sep 2025 16:28:00 +0700</pubDate>
+      <guid>https://blog.jmarhic.com/post/2025-09-25-september-update/</guid>
+      <description>&lt;p&gt;I just came back from a two weeks vacation in France with my daughter, and without my laptop, which was pretty nice. As a result I don&amp;rsquo;t have much to say for this month !&lt;/p&gt;
+&lt;p&gt;After coming back I had an idea for a small project, a &amp;ldquo;guess who&amp;rdquo; app that I vibecoded in a few hours with &lt;a href=&#34;https://firebase.studio/&#34;&gt;Firebase Studio&lt;/a&gt;. It got me a Next.js+tailwindcss app pretty quickly, with LLM calls handled by &lt;a href=&#34;https://genkit.dev/&#34;&gt;Genkit&lt;/a&gt;. Originally it was using the Gemini API and hosted on Firebase, but I&amp;rsquo;ve changed it to GPT-5 and Fly.io for hosting.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

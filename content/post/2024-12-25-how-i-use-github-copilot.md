@@ -2,6 +2,7 @@
 author_profile: true
 date: "2024-12-25T00:00:00Z"
 title: How I use GitHub Copilot
+tags: ["ai", "projects", "go"]
 ---
 
 Since the release of ChatGPT more than 2 years ago, I have felt a strong disconnect with the opinions on HackerNews about AI. It really feels like an Anti-AI (especially anti-OpenAI) echo chamber, neverendingly predicting the advent of AI winters, always repeating the same arguments (usually some flavor of "it's not intelligent", "what is AGI?", "how can you trust it?"). Well, given that the generated code compiles, the tests pass and the program works as expected, I'm not sure what there is to complain about. I feel that HN is about as wrong about AI as it was about cryptocurrencies. Eventually, I mostly stopped reading the comments, I just use it as a link aggregator now.

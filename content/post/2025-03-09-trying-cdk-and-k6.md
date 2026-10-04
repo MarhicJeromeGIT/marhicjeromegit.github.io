@@ -2,6 +2,7 @@
 author_profile: true
 date: "2025-03-09T00:00:00Z"
 title: First steps with CDK
+tags: ["tech", "projects"]
 ---
 
 Not much going on these days. At work, we started migrating some apps from Google App Engine to AWS, which gave me a chance to learn about [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html). As a learning step, I've made a small template to deploy a static website on S3 + CloudFront for the frontend and ALB + ECS for the backend, with some CloudFront behaviors, Route 53, and ACM certificates sprinkled in. As far as I know, it's a standard architecture (though I need to lock down the S3 permissions a bit more, add logs to CloudWatch, etc.), and it's really nice that it is reviewable by our security guy before we deploy it. And also, it can be deployed to staging first and later on to production with little to no changes.
